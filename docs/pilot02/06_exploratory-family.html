@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Emma Marshall">
+<meta name="dcterms.date" content="2026-10-10">
+
+<title>Exploratory Analyses – Dissertation Supplement</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pilot02/07_search-target-endorsement.html" rel="next">
+<link href="../pilot02/05_likelihood-changes-pathways.html" rel="prev">
+<link href="../logos/logo-light.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de1215aa7a72655401e1ea8563358ae8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f90b9a2f02bdf50f5114de277d3ddac9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de1215aa7a72655401e1ea8563358ae8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-10906e5c1ecb241b3dacdc47ecf0401e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f48c60ad60e7a7e0490244849dbeaddb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-10906e5c1ecb241b3dacdc47ecf0401e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<style>
+/* extensions.emmarshall.grid-background: true */
+body {
+  --grid-size: 50px;
+  --grid-color: color-mix(in srgb, var(--mc-fg) 1.5%, var(--mc-bg));
+  background-size: var(--grid-size) var(--grid-size) !important;
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px) !important;
+}
+.reveal .slide-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  --grid-size: 50px;
+  --grid-color: color-mix(in srgb, var(--mc-fg) 1.5%, var(--mc-bg));
+  background-size: var(--grid-size) var(--grid-size);
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+}
+</style>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pilot02/index.html">Pilot Study 2 Supplement: Full Analyses</a></li><li class="breadcrumb-item"><a href="../pilot02/06_exploratory-family.html"><span class="chapter-title">Exploratory Analyses</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../site_libs/quarto-contrib/quarto-project/emmarshall/logos/logo-light.svg" alt="Emma Marshall logo" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../site_libs/quarto-contrib/quarto-project/emmarshall/logos/logo-dark.svg" alt="Emma Marshall logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Dissertation Supplement</a> 
+        <div class="sidebar-tools-main">
+    <a href="../Dissertation-Supplement.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../pilot01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Study 1 Supplement: Supplementary Analyses</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/01_registered-models-hypotheses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Registered Analytic Models and Hypotheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/02_supplementary-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pilot 1 Supplementary Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/03_verdicts-mental-state-legal-accuracy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Verdicts, Mental State and Legal Accuracy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../pilot02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Study 2 Supplement: Full Analyses</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/01_analytic-framework-hypotheses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Analytic Framework and Hypotheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/02_full-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Full Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/02b_registered-analyses-in-supplement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Registered Analyses Reported in the Supplement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/03_supplementary-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pilot 2 Supplementary Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/04_selected-reinterpretation-model.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Selected Evidence-Reinterpretation Model (RQ3)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/05_likelihood-changes-pathways.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Likelihood Changes and Parallel-Then-Serial Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/06_exploratory-family.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Exploratory Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/07_search-target-endorsement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Search-Target Endorsement (RQ7)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/08_evidence-reinterpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Evidence Reinterpretation (RQ3)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/09_robustness-diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Robustness Checks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/10_historical-simulation-planning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simulation and Planning Outputs</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../study01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study 1 Supplement: Supplementary Tables and Figures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/01_s1-deviations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S1. <code>r SECTIONS[["S1"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/02_s2-measurement-reliability.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S2. <code>r SECTIONS[["S2"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/03_s3-manipulation-descriptives.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S3. <code>r SECTIONS[["S3"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/04_s4-full-model-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S4. <code>r SECTIONS[["S4"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/05_s5-rq1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S5. RQ1: Hindsight Mediation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/06_s6-rq2-exploratory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S6. <code>r SECTIONS[["S6"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/07_s7-rq3-exploratory-substitute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S7. RQ3: Exploratory Suspect Judgments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/08_s8-rq4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S8. <code>r SECTIONS[["S8"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/09_s9-rq5-exploratory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S9. <code>r SECTIONS[["S9"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/10_s10-rq6-attitudes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S10. <code>r SECTIONS[["S10"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/11_s11-standardized-estimates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S11. <code>r SECTIONS[["S11"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/12_s12-legal-context-fallback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S12. <code>r SECTIONS[["S12"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/13_s13-sensitivity-sample.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S13. <code>r SECTIONS[["S13"]]</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../study02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study 2 Supplement: Supplementary Tables and Figures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/01_s1-data-cleaning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S1")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/02_s2-descriptives.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S2")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/03_s3-manipulation-checks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S3")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/04_s4-rq1-likelihood-reinterpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S4")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/05_s5-rq2-moral-judgments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S5")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/06_s6-rq3-officer-evaluations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S6")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/07_s7-rq4-legal-decisions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S7")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/08_s8-rq5-attitudes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S8")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/09_s9-sensitivity-sample.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S9")</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pilot02/index.html">Pilot Study 2 Supplement: Full Analyses</a></li><li class="breadcrumb-item"><a href="../pilot02/06_exploratory-family.html"><span class="chapter-title">Exploratory Analyses</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-appL-p2-exploratory" class="quarto-section-identifier"><span class="chapter-title">Exploratory Analyses</span></span></h1>
+</div>
+
+
+
+<div class="em-title-metadata em-style-professional">
+
+  
+  <div class="em-professional-meta-top">
+            <span class="em-professional-date">October 10, 2026</span>
+      </div>
+
+  
+    <div class="em-professional-byline">
+        <div class="em-professional-author">
+      <div class="em-professional-avatar" aria-hidden="true"></div>
+      <div class="em-professional-author-info">
+        <div class="em-professional-author-name">
+          <span class="author"><a href="https://emmawmarshall.com">Emma Marshall<em class="quarto-title-author-degree">, J.D., M.A.</em></a> <a href="https://orcid.org/0000-0001-7387-8875" class="quarto-title-author-orcid" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt="ORCID"></a></span>
+        </div>
+                <div class="em-professional-author-affiliation">
+          University of Nebraska-Lincoln
+        </div>
+              </div>
+    </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+</header>
+
+
+<p>This chapter reports the exploratory analyses that support the primary Pilot 2 tests. They include the analyses based on causal model theory, the attitude analyses, and the analyses of later judgments.</p>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p2_a45_tbl <span class="ot">&lt;-</span> p2_a4 <span class="sc">|&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">contrast =</span> dplyr<span class="sc">::</span><span class="fu">recode</span>(contrast,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">"RH3.1 indirect a*b (registered fit)"</span> <span class="ot">=</span> <span class="st">"RH3.1 observed-composite companion indirect"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> contrast),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">est =</span> <span class="fu">paste0</span>(<span class="fu">zr_fmt</span>(estimate, <span class="dv">3</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(hdi_low) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(hdi_high) <span class="sc">&amp;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                        ((hdi_low <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|</span> (hdi_low <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&lt;</span> <span class="dv">0</span>)),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"*"</span>, <span class="st">""</span>)),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci  =</span> <span class="fu">mapply</span>(fmt_ci, hdi_low, hdi_high, <span class="at">digits =</span> <span class="dv">3</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">pp  =</span> <span class="fu">vapply</span>(p_gt_0, fmt_pp, <span class="fu">character</span>(<span class="dv">1</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(contrast, est, ci, pp)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>p2_a45_tbl <span class="ot">&lt;-</span> p2_a45_tbl <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Indirect route</span><span class="st">`</span> <span class="ot">=</span> contrast,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Indirect</span><span class="st">`</span> <span class="ot">=</span> est,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">95% HDI</span><span class="st">`</span> <span class="ot">=</span> ci,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">P(indirect &gt; 0)</span><span class="st">`</span> <span class="ot">=</span> pp</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(p2_a45_tbl, <span class="at">engine =</span> <span class="st">"auto"</span>, <span class="at">fontsize =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-a45" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-a45-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.13</strong><br>
+<em>Pilot 2 observed-composite reinterpretation results: the RH3.1 companion indirect, E3.1 conditional indirects by vignette, and three relative indices. The selected latent primary is reported in <a href="04_selected-reinterpretation-model.html#tbl-pilot2-latent-selected" class="quarto-xref">Table&nbsp;<span>P2.8</span></a>. * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-a45-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_3qb32rz8ug8xtgl40jq6 = TinyTable.createTableFunctions("tinytable_3qb32rz8ug8xtgl40jq6");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '7', j: 2 }, { i: '7', j: 3 }, { i: '7', j: 4 } ], css_id: 'tinytable_css_eu0gln80lkl6jnbje86a',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 } ], css_id: 'tinytable_css_zfo29h12cf8z4wv0zq2u',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_py1f4el3yz55zk6uqrns',}, 
+          { positions: [ { i: '7', j: 1 } ], css_id: 'tinytable_css_9vrijl8f06wen9nijd65',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 } ], css_id: 'tinytable_css_lykorj95qnwaci155dke',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_zfiyzwb1657ql06bff27',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_3qb32rz8ug8xtgl40jq6.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_eu0gln80lkl6jnbje86a, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_eu0gln80lkl6jnbje86a {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_zfo29h12cf8z4wv0zq2u, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_zfo29h12cf8z4wv0zq2u { text-align: center; font-size: 0.9em }
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_py1f4el3yz55zk6uqrns, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_py1f4el3yz55zk6uqrns {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_9vrijl8f06wen9nijd65, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_9vrijl8f06wen9nijd65 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_lykorj95qnwaci155dke, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_lykorj95qnwaci155dke { text-align: left; font-size: 0.9em }
+    #tinytable_3qb32rz8ug8xtgl40jq6 td.tinytable_css_zfiyzwb1657ql06bff27, #tinytable_3qb32rz8ug8xtgl40jq6 th.tinytable_css_zfiyzwb1657ql06bff27 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_3qb32rz8ug8xtgl40jq6" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Indirect route</th>
+                <th scope="col" data-row="0" data-col="2">Indirect</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">P(indirect &gt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">RH3.1 observed-composite companion indirect</td>
+                  <td data-row="1" data-col="2">−0.315</td>
+                  <td data-row="1" data-col="3">[−1.606, 0.969]</td>
+                  <td data-row="1" data-col="4">.310</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">E3.1 conditional indirect @ SMA</td>
+                  <td data-row="2" data-col="2">−0.321</td>
+                  <td data-row="2" data-col="3">[−1.718, 1.025]</td>
+                  <td data-row="2" data-col="4">.312</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">E3.1 conditional indirect @ NCM</td>
+                  <td data-row="3" data-col="2">−0.278</td>
+                  <td data-row="3" data-col="3">[−1.514, 0.907]</td>
+                  <td data-row="3" data-col="4">.312</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">E3.1 conditional indirect @ CM</td>
+                  <td data-row="4" data-col="2">−0.317</td>
+                  <td data-row="4" data-col="3">[−1.652, 1.076]</td>
+                  <td data-row="4" data-col="4">.312</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">E3.1 relative index of moderated mediation (CM - NCM)</td>
+                  <td data-row="5" data-col="2">−0.011</td>
+                  <td data-row="5" data-col="3">[−0.443, 0.331]</td>
+                  <td data-row="5" data-col="4">.425</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">E3.1 relative index of moderated mediation (SMA - NCM)</td>
+                  <td data-row="6" data-col="2">−0.012</td>
+                  <td data-row="6" data-col="3">[−0.449, 0.325]</td>
+                  <td data-row="6" data-col="4">.420</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">E3.1 relative index of moderated mediation (CM - SMA)</td>
+                  <td data-row="7" data-col="2">0.001</td>
+                  <td data-row="7" data-col="3">[−0.355, 0.350]</td>
+                  <td data-row="7" data-col="4">.508</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>p2_a7_input <span class="ot">&lt;-</span> p2_a7 <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">term =</span> dplyr<span class="sc">::</span><span class="fu">recode</span>(term,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"specific composite"</span> <span class="ot">=</span> <span class="st">"Specific-foreseeability composite"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"general item"</span> <span class="ot">=</span> <span class="st">"General-foreseeability item"</span>, <span class="at">.default =</span> term))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(<span class="fu">supp_bayes_table</span>(p2_a7_input, <span class="st">"term"</span>), <span class="at">engine =</span> <span class="st">"auto"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-a7" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-a7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.14</strong><br>
+<em>Pilot 2 E2.1: pre-to-post Timing coefficients for the specific-foreseeability composite and general-foreseeability item, and their difference, on the native 1–5 scale. Signed posterior probabilities are Pr(effect &gt; 0). * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-a7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_77qxbzb9qga3fr0etg7o = TinyTable.createTableFunctions("tinytable_77qxbzb9qga3fr0etg7o");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '3', j: 2 }, { i: '3', j: 3 }, { i: '3', j: 4 } ], css_id: 'tinytable_css_l8fxvcz83vpbdr2db1iu',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 } ], css_id: 'tinytable_css_tfd58gkczoaub97b6lhx',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_34v2eoz3dibb69hx8b2e',}, 
+          { positions: [ { i: '3', j: 1 } ], css_id: 'tinytable_css_eot9ppcwkogouz6pmtpw',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 } ], css_id: 'tinytable_css_ua6fsgvp7pfiil4opjl7',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_rn3izgyzlq86d13ckrtl',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_77qxbzb9qga3fr0etg7o.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_l8fxvcz83vpbdr2db1iu, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_l8fxvcz83vpbdr2db1iu {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_tfd58gkczoaub97b6lhx, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_tfd58gkczoaub97b6lhx { text-align: center; font-size: 0.9em }
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_34v2eoz3dibb69hx8b2e, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_34v2eoz3dibb69hx8b2e {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_eot9ppcwkogouz6pmtpw, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_eot9ppcwkogouz6pmtpw {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_ua6fsgvp7pfiil4opjl7, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_ua6fsgvp7pfiil4opjl7 { text-align: left; font-size: 0.9em }
+    #tinytable_77qxbzb9qga3fr0etg7o td.tinytable_css_rn3izgyzlq86d13ckrtl, #tinytable_77qxbzb9qga3fr0etg7o th.tinytable_css_rn3izgyzlq86d13ckrtl {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_77qxbzb9qga3fr0etg7o" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Quantity</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">Pr(effect &gt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">Specific-foreseeability composite</td>
+                  <td data-row="1" data-col="2">−0.112*</td>
+                  <td data-row="1" data-col="3">[−0.217, −0.010]</td>
+                  <td data-row="1" data-col="4">.018</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">General-foreseeability item</td>
+                  <td data-row="2" data-col="2">−0.099</td>
+                  <td data-row="2" data-col="3">[−0.217, 0.023]</td>
+                  <td data-row="2" data-col="4">.055</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Timing effect: specific - general</td>
+                  <td data-row="3" data-col="2">−0.013</td>
+                  <td data-row="3" data-col="3">[−0.166, 0.143]</td>
+                  <td data-row="3" data-col="4">.433</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(<span class="fu">supp_bayes_table</span>(p2_b6c_fore, <span class="st">"route"</span>), <span class="at">engine =</span> <span class="st">"auto"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-b6c-fore" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-b6c-fore-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.15</strong><br>
+<em>Pilot 2 E4.1 alternative foreseeability operationalization: indirect routes through changes in specific foreseeability and rated severity, and the residual direct effect on decision quality. The registered primary operationalization uses the subjective-probability slider. * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-b6c-fore-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_ne3fsny07bxjnxqg546m = TinyTable.createTableFunctions("tinytable_ne3fsny07bxjnxqg546m");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '3', j: 2 }, { i: '3', j: 3 }, { i: '3', j: 4 } ], css_id: 'tinytable_css_ckw5ptpbpnqwhomeuko3',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 } ], css_id: 'tinytable_css_qnrsqcfmckwar95zohic',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_k7r4t8203q1z8k45f9je',}, 
+          { positions: [ { i: '3', j: 1 } ], css_id: 'tinytable_css_z9rizycau49sdkbkzjen',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 } ], css_id: 'tinytable_css_z3l6qvmd4n057qlgvx0s',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_xw3e53d2awr3ei5wjtul',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_ne3fsny07bxjnxqg546m.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_ckw5ptpbpnqwhomeuko3, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_ckw5ptpbpnqwhomeuko3 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_qnrsqcfmckwar95zohic, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_qnrsqcfmckwar95zohic { text-align: center; font-size: 0.9em }
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_k7r4t8203q1z8k45f9je, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_k7r4t8203q1z8k45f9je {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_z9rizycau49sdkbkzjen, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_z9rizycau49sdkbkzjen {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_z3l6qvmd4n057qlgvx0s, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_z3l6qvmd4n057qlgvx0s { text-align: left; font-size: 0.9em }
+    #tinytable_ne3fsny07bxjnxqg546m td.tinytable_css_xw3e53d2awr3ei5wjtul, #tinytable_ne3fsny07bxjnxqg546m th.tinytable_css_xw3e53d2awr3ei5wjtul {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_ne3fsny07bxjnxqg546m" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Quantity</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">Pr(effect &gt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">hindsight route (a_f * b_f; via Delta specific-foreseeability)</td>
+                  <td data-row="1" data-col="2">0.088*</td>
+                  <td data-row="1" data-col="3">[0.050, 0.129]</td>
+                  <td data-row="1" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">direct outcome-bias route (a_sigma * b_sigma; via Delta severity)</td>
+                  <td data-row="2" data-col="2">0.038*</td>
+                  <td data-row="2" data-col="3">[0.004, 0.074]</td>
+                  <td data-row="2" data-col="4">.988</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">residual direct path c'</td>
+                  <td data-row="3" data-col="2">0.149*</td>
+                  <td data-row="3" data-col="3">[0.018, 0.270]</td>
+                  <td data-row="3" data-col="4">.989</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Moderated-mediation family via apa_mediation_bayes; quantity is the Effect label,</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pd read from the source's pd column. digits = 3 matches the three-decimal indirects.</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  dissAPA<span class="sc">::</span><span class="fu">apa_mediation_bayes</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    p2_b6e <span class="sc">|&gt;</span> <span class="fu">select</span>(quantity, estimate, hdi_low, hdi_high, pd), <span class="at">digits =</span> <span class="dv">3</span>),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">engine =</span> <span class="st">"auto"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-b6e" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-b6e-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.16</strong><br>
+<em>Pilot 2 E4.3: vignette-averaged specific-foreseeability indirect; relative indices for SMA − NCM and CM − NCM; three vignette-specific indirects; general-foreseeability indirect; and residual direct path. The lagged-covariate form and two relative indices follow the recorded analysis decision. Intervals are 95% HDIs; pd is the posterior probability of direction. * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-b6e-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_sfho61yjahcvxvarr3ul = TinyTable.createTableFunctions("tinytable_sfho61yjahcvxvarr3ul");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '8', j: 2 }, { i: '8', j: 3 }, { i: '8', j: 4 } ], css_id: 'tinytable_css_od1xm7jph1ej45o5ium0',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '7', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '7', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 }, { i: '7', j: 4 } ], css_id: 'tinytable_css_hdwsch4va63t5dtbjkvi',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_tz0irjdt1joui3cfk9sf',}, 
+          { positions: [ { i: '8', j: 1 } ], css_id: 'tinytable_css_lgrx718s6bi8whhivfuo',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 } ], css_id: 'tinytable_css_1btzwesbjeqzqhk5um6t',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_rddmna6d2c90q8n5cugt',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_sfho61yjahcvxvarr3ul.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_od1xm7jph1ej45o5ium0, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_od1xm7jph1ej45o5ium0 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_hdwsch4va63t5dtbjkvi, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_hdwsch4va63t5dtbjkvi { text-align: center; font-size: 0.9em }
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_tz0irjdt1joui3cfk9sf, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_tz0irjdt1joui3cfk9sf {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_lgrx718s6bi8whhivfuo, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_lgrx718s6bi8whhivfuo {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_1btzwesbjeqzqhk5um6t, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_1btzwesbjeqzqhk5um6t { text-align: left; font-size: 0.9em }
+    #tinytable_sfho61yjahcvxvarr3ul td.tinytable_css_rddmna6d2c90q8n5cugt, #tinytable_sfho61yjahcvxvarr3ul th.tinytable_css_rddmna6d2c90q8n5cugt {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_sfho61yjahcvxvarr3ul" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        <caption>Indirect (Mediated) Effects</caption>
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Effect</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">pd</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4">Note. Estimate = posterior median; 95% HDI = highest-density interval; pd = posterior probability of direction. Indirect effects are products of posterior draws of the constituent paths. * 95% HDI excludes zero.</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">E4.3 specific-foreseeability indirect (vignette-averaged a_spec * b_spec; expected &gt; 0)</td>
+                  <td data-row="1" data-col="2">0.077*</td>
+                  <td data-row="1" data-col="3">[0.026, 0.131]</td>
+                  <td data-row="1" data-col="4">.999</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">E4.3 relative index of moderated mediation, SMA - NCM ((a_spec,SMA - a_spec,NCM) * b_spec)</td>
+                  <td data-row="2" data-col="2">0.040*</td>
+                  <td data-row="2" data-col="3">[0.005, 0.083]</td>
+                  <td data-row="2" data-col="4">.997</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">E4.3 relative index of moderated mediation, CM - NCM ((a_spec,CM - a_spec,NCM) * b_spec)</td>
+                  <td data-row="3" data-col="2">0.041*</td>
+                  <td data-row="3" data-col="3">[0.005, 0.084]</td>
+                  <td data-row="3" data-col="4">.997</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">E4.3 conditional specific indirect, NCM (reference)</td>
+                  <td data-row="4" data-col="2">0.047*</td>
+                  <td data-row="4" data-col="3">[0.011, 0.092]</td>
+                  <td data-row="4" data-col="4">.999</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">E4.3 conditional specific indirect, SMA</td>
+                  <td data-row="5" data-col="2">0.090*</td>
+                  <td data-row="5" data-col="3">[0.029, 0.156]</td>
+                  <td data-row="5" data-col="4">.999</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">E4.3 conditional specific indirect, CM</td>
+                  <td data-row="6" data-col="2">0.091*</td>
+                  <td data-row="6" data-col="3">[0.030, 0.158]</td>
+                  <td data-row="6" data-col="4">.999</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">E4.3 general-pole indirect (vignette-averaged a_gen * b_gen; expected to include 0)</td>
+                  <td data-row="7" data-col="2">0.100*</td>
+                  <td data-row="7" data-col="3">[0.051, 0.154]</td>
+                  <td data-row="7" data-col="4">1.000</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">E4.3 residual direct c' (Blank et al., 2015 independence; expected to exclude 0)</td>
+                  <td data-row="8" data-col="2">0.114</td>
+                  <td data-row="8" data-col="3">[−0.030, 0.257]</td>
+                  <td data-row="8" data-col="4">.940</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>p2_p6_tbl <span class="ot">&lt;-</span> p2_p6 <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">est   =</span> <span class="fu">paste0</span>(<span class="fu">zr_fmt</span>(estimate, <span class="dv">2</span>),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(hdi_low) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(hdi_high) <span class="sc">&amp;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                          ((hdi_low <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|</span> (hdi_low <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&lt;</span> <span class="dv">0</span>)),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                          <span class="st">"*"</span>, <span class="st">""</span>)),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci    =</span> <span class="fu">mapply</span>(fmt_ci, hdi_low, hdi_high),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">pp_lt =</span> <span class="fu">vapply</span>(p_lt_0, fmt_pp, <span class="fu">character</span>(<span class="dv">1</span>))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(contrast, est, ci, pp_lt)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>p2_p6_tbl <span class="ot">&lt;-</span> p2_p6_tbl <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Contrast</span><span class="st">`</span> <span class="ot">=</span> contrast,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">b</span><span class="st">`</span> <span class="ot">=</span> est,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">95% HDI</span><span class="st">`</span> <span class="ot">=</span> ci,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">P(b &lt; 0)</span><span class="st">`</span> <span class="ot">=</span> pp_lt</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(p2_p6_tbl, <span class="at">engine =</span> <span class="st">"auto"</span>, <span class="at">fontsize =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-p6" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-p6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.17</strong><br>
+<em>Pilot 2 descriptive signed readout of the RH4.1 decision-quality pre-to-post coefficient. RH4.1 predicts a positive change; this table explicitly reports Pr(b &lt; 0) as a descriptive signed probability. * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-p6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_4olgmfckbs7vwyxka3xl = TinyTable.createTableFunctions("tinytable_4olgmfckbs7vwyxka3xl");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '1', j: 2 }, { i: '1', j: 3 }, { i: '1', j: 4 } ], css_id: 'tinytable_css_m94fjsznbg3lzwqpsqpp',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_ghcs6qsw3h7zz7yyh041',}, 
+          { positions: [ { i: '1', j: 1 } ], css_id: 'tinytable_css_jvz4r45d9qvbms9e3999',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_1wxgq5jda8kcvph883na',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_4olgmfckbs7vwyxka3xl.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_4olgmfckbs7vwyxka3xl td.tinytable_css_m94fjsznbg3lzwqpsqpp, #tinytable_4olgmfckbs7vwyxka3xl th.tinytable_css_m94fjsznbg3lzwqpsqpp {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_4olgmfckbs7vwyxka3xl td.tinytable_css_ghcs6qsw3h7zz7yyh041, #tinytable_4olgmfckbs7vwyxka3xl th.tinytable_css_ghcs6qsw3h7zz7yyh041 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_4olgmfckbs7vwyxka3xl td.tinytable_css_jvz4r45d9qvbms9e3999, #tinytable_4olgmfckbs7vwyxka3xl th.tinytable_css_jvz4r45d9qvbms9e3999 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_4olgmfckbs7vwyxka3xl td.tinytable_css_1wxgq5jda8kcvph883na, #tinytable_4olgmfckbs7vwyxka3xl th.tinytable_css_1wxgq5jda8kcvph883na {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_4olgmfckbs7vwyxka3xl" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Contrast</th>
+                <th scope="col" data-row="0" data-col="2">b</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">P(b &lt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">RH4.1 decision-quality Timing main effect (direction read-out; registered positive), vignette-averaged</td>
+                  <td data-row="1" data-col="2">0.17*</td>
+                  <td data-row="1" data-col="3">[0.09, 0.25]</td>
+                  <td data-row="1" data-col="4">&lt; .001</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>p2_c4d_tbl <span class="ot">&lt;-</span> p2_c4d <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">"Four-stage serial indirect (relevance first stage)"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">est   =</span> <span class="fu">paste0</span>(<span class="fu">zr_fmt</span>(estimate, <span class="dv">4</span>),</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(ci_low) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(ci_high) <span class="sc">&amp;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                          ((ci_low <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> ci_high <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|</span> (ci_low <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> ci_high <span class="sc">&lt;</span> <span class="dv">0</span>)),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                          <span class="st">"*"</span>, <span class="st">""</span>)),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci    =</span> <span class="fu">mapply</span>(fmt_ci, ci_low, ci_high, <span class="at">digits =</span> <span class="dv">4</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(label, est, ci)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>p2_c4d_tbl <span class="ot">&lt;-</span> p2_c4d_tbl <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Quantity</span><span class="st">`</span> <span class="ot">=</span> label,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Indirect</span><span class="st">`</span> <span class="ot">=</span> est,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">95% BC CI</span><span class="st">`</span> <span class="ot">=</span> ci</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(p2_c4d_tbl, <span class="at">engine =</span> <span class="st">"auto"</span>, <span class="at">fontsize =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-c4d" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-c4d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.18</strong><br>
+<em>Pilot 2 four-stage serial indirect (the kind of incriminating evidence found → evidence relevance → pregnancy-specific likelihood → negligence → suspect blame), with a bias-corrected nonparametric bootstrap 95% confidence interval. The registered exploratory read-out is a confidence interval excluding zero in the positive direction. * 95% CI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-c4d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_ebgtyetso2inv241biv6 = TinyTable.createTableFunctions("tinytable_ebgtyetso2inv241biv6");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '1', j: 2 }, { i: '1', j: 3 } ], css_id: 'tinytable_css_yw0k5ur4z26arbykxvv6',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 } ], css_id: 'tinytable_css_0kc8wileqe77n5zgqmb1',}, 
+          { positions: [ { i: '1', j: 1 } ], css_id: 'tinytable_css_22imh1gf64byeuwrzm51',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_hwgh9fq96fnwk8fqctmh',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_ebgtyetso2inv241biv6.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_ebgtyetso2inv241biv6 td.tinytable_css_yw0k5ur4z26arbykxvv6, #tinytable_ebgtyetso2inv241biv6 th.tinytable_css_yw0k5ur4z26arbykxvv6 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_ebgtyetso2inv241biv6 td.tinytable_css_0kc8wileqe77n5zgqmb1, #tinytable_ebgtyetso2inv241biv6 th.tinytable_css_0kc8wileqe77n5zgqmb1 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_ebgtyetso2inv241biv6 td.tinytable_css_22imh1gf64byeuwrzm51, #tinytable_ebgtyetso2inv241biv6 th.tinytable_css_22imh1gf64byeuwrzm51 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_ebgtyetso2inv241biv6 td.tinytable_css_hwgh9fq96fnwk8fqctmh, #tinytable_ebgtyetso2inv241biv6 th.tinytable_css_hwgh9fq96fnwk8fqctmh {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_ebgtyetso2inv241biv6" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Quantity</th>
+                <th scope="col" data-row="0" data-col="2">Indirect</th>
+                <th scope="col" data-row="0" data-col="3">95% BC CI</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">Four-stage serial indirect (relevance first stage)</td>
+                  <td data-row="1" data-col="2">0.0178*</td>
+                  <td data-row="1" data-col="3">[0.0062, 0.0407]</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>p2_rq5_tbl <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  p2_c6 <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">family =</span> <span class="st">"Attitude moderation"</span>,  <span class="at">label =</span> <span class="fu">paste</span>(dv, term, <span class="at">sep =</span> <span class="st">" · "</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>           <span class="fu">select</span>(family, label, estimate, hdi_low, hdi_high, p_gt_0),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  p2_c8 <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">family =</span> <span class="st">"Hostile/benevolent-sexism parallel mediation"</span>, <span class="at">label =</span> contrast) <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>           <span class="fu">select</span>(family, label, estimate, hdi_low, hdi_high, p_gt_0)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">est =</span> <span class="fu">paste0</span>(<span class="fu">zr_fmt</span>(estimate, <span class="dv">3</span>),</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.na</span>(hdi_low) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(hdi_high) <span class="sc">&amp;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                        ((hdi_low <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|</span> (hdi_low <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hdi_high <span class="sc">&lt;</span> <span class="dv">0</span>)),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"*"</span>, <span class="st">""</span>)),</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci  =</span> <span class="fu">mapply</span>(fmt_ci, hdi_low, hdi_high, <span class="at">digits =</span> <span class="dv">3</span>),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">pp  =</span> <span class="fu">vapply</span>(p_gt_0, fmt_pp, <span class="fu">character</span>(<span class="dv">1</span>))</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(family, label, est, ci, pp)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>p2_rq5_tbl <span class="ot">&lt;-</span> p2_rq5_tbl <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Term / contrast</span><span class="st">`</span> <span class="ot">=</span> label, <span class="st">`</span><span class="at">Estimate</span><span class="st">`</span> <span class="ot">=</span> est, <span class="st">`</span><span class="at">95% HDI</span><span class="st">`</span> <span class="ot">=</span> ci, <span class="st">`</span><span class="at">P(b &gt; 0)</span><span class="st">`</span> <span class="ot">=</span> pp)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(p2_rq5_tbl, <span class="at">engine =</span> <span class="st">"auto"</span>, <span class="at">group_col =</span> <span class="st">"family"</span>, <span class="at">fontsize =</span> <span class="fl">0.9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-rq5" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-rq5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.19</strong><br>
+<em>Pilot 2 RQ6 exploratory results. E5.4 rows report Outcome × abortion-attitude interactions and expected-minus-unexpected outcome contrasts at attitude ±1 SD for pregnancy-specific likelihood and foreseeability. E5.6 rows report the hostile- and benevolent-sexism indirect paths to punishment through punishment support and abortion attitudes. * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-rq5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_vbqdttg6xpcmym0md26e = TinyTable.createTableFunctions("tinytable_vbqdttg6xpcmym0md26e");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_vbqdttg6xpcmym0md26e.spanCell(8, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_vbqdttg6xpcmym0md26e.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '12', j: 2 }, { i: '12', j: 3 }, { i: '12', j: 4 } ], css_id: 'tinytable_css_12h4t8re04d3ytppisb7',}, 
+          { positions: [ { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '7', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '7', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 }, { i: '7', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 } ], css_id: 'tinytable_css_pisjuy7h2lvaf5nrb3gf',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_iuxvhcgoh325tp94pjku',}, 
+          { positions: [ { i: '12', j: 1 } ], css_id: 'tinytable_css_oavqtiettv4anh5dah19',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 } ], css_id: 'tinytable_css_25so2i7wixiz2fzsciar',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '8', j: 1 }, { i: '1', j: 2 }, { i: '8', j: 2 }, { i: '1', j: 3 }, { i: '8', j: 3 }, { i: '1', j: 4 }, { i: '8', j: 4 } ], css_id: 'tinytable_css_byvumcwb466fgwtssjhz',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_fgu7me0bc8argwjsji4w',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_vbqdttg6xpcmym0md26e.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_12h4t8re04d3ytppisb7, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_12h4t8re04d3ytppisb7 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_pisjuy7h2lvaf5nrb3gf, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_pisjuy7h2lvaf5nrb3gf { text-align: center; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_iuxvhcgoh325tp94pjku, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_iuxvhcgoh325tp94pjku {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_oavqtiettv4anh5dah19, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_oavqtiettv4anh5dah19 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_25so2i7wixiz2fzsciar, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_25so2i7wixiz2fzsciar { text-align: left; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_byvumcwb466fgwtssjhz, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_byvumcwb466fgwtssjhz { font-weight: bold; font-style: italic; text-align: left; font-size: 0.9em }
+    #tinytable_vbqdttg6xpcmym0md26e td.tinytable_css_fgu7me0bc8argwjsji4w, #tinytable_vbqdttg6xpcmym0md26e th.tinytable_css_fgu7me0bc8argwjsji4w {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_vbqdttg6xpcmym0md26e" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Term / contrast</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">P(b &gt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">Attitude moderation</td>
+                  <td data-row="1" data-col="2">Attitude moderation</td>
+                  <td data-row="1" data-col="3">Attitude moderation</td>
+                  <td data-row="1" data-col="4">Attitude moderation</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">pregnancy-specific likelihood · Outcome x AAS interaction</td>
+                  <td data-row="2" data-col="2">−1.545</td>
+                  <td data-row="2" data-col="3">[−6.420, 3.462]</td>
+                  <td data-row="2" data-col="4">.269</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">pregnancy-specific likelihood · expected-vs-unexpected outcome at AAS +1 SD</td>
+                  <td data-row="3" data-col="2">17.483*</td>
+                  <td data-row="3" data-col="3">[10.417, 24.423]</td>
+                  <td data-row="3" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">pregnancy-specific likelihood · expected-vs-unexpected outcome at AAS −1 SD</td>
+                  <td data-row="4" data-col="2">20.595*</td>
+                  <td data-row="4" data-col="3">[13.480, 27.441]</td>
+                  <td data-row="4" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">foreseeability · Outcome x AAS interaction</td>
+                  <td data-row="5" data-col="2">−0.062</td>
+                  <td data-row="5" data-col="3">[−0.230, 0.110]</td>
+                  <td data-row="5" data-col="4">.239</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">foreseeability · expected-vs-unexpected outcome at AAS +1 SD</td>
+                  <td data-row="6" data-col="2">0.441*</td>
+                  <td data-row="6" data-col="3">[0.195, 0.678]</td>
+                  <td data-row="6" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">foreseeability · expected-vs-unexpected outcome at AAS −1 SD</td>
+                  <td data-row="7" data-col="2">0.565*</td>
+                  <td data-row="7" data-col="3">[0.325, 0.805]</td>
+                  <td data-row="7" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Hostile/benevolent-sexism parallel mediation</td>
+                  <td data-row="8" data-col="2">Hostile/benevolent-sexism parallel mediation</td>
+                  <td data-row="8" data-col="3">Hostile/benevolent-sexism parallel mediation</td>
+                  <td data-row="8" data-col="4">Hostile/benevolent-sexism parallel mediation</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">HS through Chalmers</td>
+                  <td data-row="9" data-col="2">0.164*</td>
+                  <td data-row="9" data-col="3">[0.092, 0.243]</td>
+                  <td data-row="9" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">HS through Sloan</td>
+                  <td data-row="10" data-col="2">0.183*</td>
+                  <td data-row="10" data-col="3">[0.113, 0.258]</td>
+                  <td data-row="10" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1">BS through Chalmers</td>
+                  <td data-row="11" data-col="2">0.088*</td>
+                  <td data-row="11" data-col="3">[0.043, 0.141]</td>
+                  <td data-row="11" data-col="4">&gt; .999</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">BS through Sloan</td>
+                  <td data-row="12" data-col="2">0.151*</td>
+                  <td data-row="12" data-col="3">[0.090, 0.219]</td>
+                  <td data-row="12" data-col="4">&gt; .999</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(<span class="fu">supp_bayes_table</span>(p2_o4), <span class="at">engine =</span> <span class="st">"auto"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot2-rq6" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot2-rq6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P2.20</strong><br>
+<em>Pilot 2 E6.4: outcome → outcome-specific foreseeability → detective blameworthiness → deserved consequence severity. Rows report the serial indirect, the direct effect at each error-preference level, and their difference. Exploratory; signed posterior probabilities are Pr(effect &gt; 0). * 95% HDI excludes zero.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot2-rq6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_t7u2pyfxou261apr3hxs = TinyTable.createTableFunctions("tinytable_t7u2pyfxou261apr3hxs");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '4', j: 2 }, { i: '4', j: 3 }, { i: '4', j: 4 } ], css_id: 'tinytable_css_c6cefw7zbwa7fb3auufo',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '3', j: 4 } ], css_id: 'tinytable_css_jlwq1l9ch9y3gch0o8yr',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_5l4gxujlw2v5lfns27oe',}, 
+          { positions: [ { i: '4', j: 1 } ], css_id: 'tinytable_css_pulyprsk66axpx95blm6',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 } ], css_id: 'tinytable_css_rlzc59p0syg8sryvh7ho',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_xchphd7yedftf2bswxwc',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_t7u2pyfxou261apr3hxs.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_c6cefw7zbwa7fb3auufo, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_c6cefw7zbwa7fb3auufo {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.9em }
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_jlwq1l9ch9y3gch0o8yr, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_jlwq1l9ch9y3gch0o8yr { text-align: center; font-size: 0.9em }
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_5l4gxujlw2v5lfns27oe, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_5l4gxujlw2v5lfns27oe {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: center; font-size: 0.9em }
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_pulyprsk66axpx95blm6, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_pulyprsk66axpx95blm6 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left; font-size: 0.9em }
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_rlzc59p0syg8sryvh7ho, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_rlzc59p0syg8sryvh7ho { text-align: left; font-size: 0.9em }
+    #tinytable_t7u2pyfxou261apr3hxs td.tinytable_css_xchphd7yedftf2bswxwc, #tinytable_t7u2pyfxou261apr3hxs th.tinytable_css_xchphd7yedftf2bswxwc {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.9em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_t7u2pyfxou261apr3hxs" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Quantity</th>
+                <th scope="col" data-row="0" data-col="2">Estimate</th>
+                <th scope="col" data-row="0" data-col="3">95% HDI</th>
+                <th scope="col" data-row="0" data-col="4">Pr(effect &gt; 0)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">serial indirect a1*d21*b2 (expected vs. unexpected outcome)</td>
+                  <td data-row="1" data-col="2">−0.401*</td>
+                  <td data-row="1" data-col="3">[−0.844, −0.001]</td>
+                  <td data-row="1" data-col="4">.018</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">conditional direct effect c-prime at false-negative-worse</td>
+                  <td data-row="2" data-col="2">−0.223</td>
+                  <td data-row="2" data-col="3">[−0.841, 0.422]</td>
+                  <td data-row="2" data-col="4">.241</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">conditional direct effect c-prime at false-positive-worse</td>
+                  <td data-row="3" data-col="2">0.008</td>
+                  <td data-row="3" data-col="3">[−0.602, 0.600]</td>
+                  <td data-row="3" data-col="4">.510</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">conditional direct-effect contrast (false-positive-worse minus false-negative-worse)</td>
+                  <td data-row="4" data-col="2">0.232</td>
+                  <td data-row="4" data-col="3">[−0.565, 1.020]</td>
+                  <td data-row="4" data-col="4">.718</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../pilot02/05_likelihood-changes-pathways.html" class="pagination-link" aria-label="Likelihood Changes and Parallel-Then-Serial Pathways">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Likelihood Changes and Parallel-Then-Serial Pathways</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../pilot02/07_search-target-endorsement.html" class="pagination-link" aria-label="Search-Target Endorsement (RQ7)">
+        <span class="nav-page-text"><span class="chapter-title">Search-Target Endorsement (RQ7)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Emma W. Marshall — Dissertation Supplement</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Department of Psychology, University of Nebraska–Lincoln</p>
+</div>
+  </div>
+</footer>
+<script id="quarto-ordinal-dates" type="text/javascript">
+  const dateElements = document.querySelectorAll(
+    "p.date, p.date-modified, div.listing-date, div.listing-file-modified, span.em-professional-date, span.em-professional-modified, span.em-academic-date, span.em-academic-modified"
+  );
+  dateElements.forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(
+      /(\d+)(st|nd|rd|th)/g,
+      "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
+    );
+  });
+</script>
+<script id="quarto-current-year" type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.getElementById('current-year');
+    if (el) el.textContent = new Date().getFullYear();
+  });
+</script>
+<script id="quarto-categories-alphabetical" type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const categories = document.querySelectorAll(".quarto-listing-category .category");
+    const container = document.querySelector(".quarto-listing-category");
+    if (!container || categories.length === 0) return;
+
+    const categoryMap = {};
+    categories.forEach(category => {
+      const dataCategory = category.getAttribute("data-category");
+      const decodedCategory = atob(dataCategory);
+      const firstLetter = decodedCategory.charAt(0).toUpperCase();
+      if (!categoryMap[firstLetter]) {
+        categoryMap[firstLetter] = [];
+      }
+      categoryMap[firstLetter].push(category);
+    });
+
+    Object.keys(categoryMap).sort().forEach(letter => {
+      const groupDiv = document.createElement("div");
+      groupDiv.classList.add("category-group");
+      const button = document.createElement("div");
+      button.classList.add("category", "collapsed");
+      button.setAttribute("data-bs-toggle", "collapse");
+      button.setAttribute("data-bs-target", `#collapse-category-${letter}`);
+      button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-label", `Toggle ${letter} categories`);
+      button.setAttribute("aria-controls", `collapse-category-${letter}`);
+      button.setAttribute("role", "button");
+      button.innerHTML = `<div style="font-style: italic;">${letter}</div>`;
+      const collapseDiv = document.createElement("div");
+      collapseDiv.classList.add("collapse");
+      collapseDiv.id = `collapse-category-${letter}`;
+
+      if (letter.length === 0) {
+        categoryMap[letter].forEach(category => {
+          container.appendChild(category);
+        });
+      } else {
+        categoryMap[letter].forEach(category => {
+          collapseDiv.appendChild(category);
+        });
+        groupDiv.appendChild(button);
+        groupDiv.appendChild(collapseDiv);
+        container.appendChild(groupDiv);
+      }
+    });
+  });
+</script>
+<script id="quarto-extensions-listing-clipboardjs" type="text/javascript">
+  window.document.addEventListener('DOMContentLoaded', (event) => {
+    const initialiseModalClipboard = () => {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach((modal) => {
+        const modalId = modal.getAttribute('id');
+        if (!modalId) return;
+
+        const copyButtons = modal.querySelectorAll('.code-copy-button');
+        if (copyButtons.length === 0) return;
+
+        copyButtons.forEach((button) => {
+          button.setAttribute('data-in-quarto-modal', modalId);
+        });
+
+        const clipboardModal = new window.ClipboardJS(
+          `.code-copy-button[data-in-quarto-modal="${modalId}"]`,
+          {
+            text: (trigger) => {
+              const codeEl = trigger.previousElementSibling.cloneNode(true);
+              const annotations = codeEl.querySelectorAll('[class*="code-annotation-"]');
+              annotations.forEach((annotation) => annotation.remove());
+              return codeEl.innerText;
+            },
+            container: modal
+          }
+        );
+
+        clipboardModal.on('success', (e) => {
+          const button = e.trigger;
+          button.blur();
+          button.classList.add('code-copy-button-checked');
+          const currentTitle = button.getAttribute('title');
+          button.setAttribute('title', 'Copied!');
+
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute('data-bs-toggle', 'tooltip');
+            button.setAttribute('data-bs-placement', 'left');
+            button.setAttribute('data-bs-title', 'Copied!');
+            tooltip = new bootstrap.Tooltip(button, {
+              trigger: 'manual',
+              customClass: 'code-copy-button-tooltip',
+              offset: [0, -8]
+            });
+            tooltip.show();
+          }
+
+          setTimeout(() => {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute('data-bs-title');
+              button.removeAttribute('data-bs-toggle');
+              button.removeAttribute('data-bs-placement');
+            }
+            button.setAttribute('title', currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+
+          e.clearSelection();
+        });
+      });
+    };
+
+    initialiseModalClipboard();
+    document.addEventListener('shown.bs.modal', () => {
+      initialiseModalClipboard();
+    });
+  });
+</script>
+<script id="quarto-external-links" type="text/javascript">
+  // Workaround for https://github.com/quarto-dev/quarto-cli/issues/10730
+  const SIDEBAR_LINK_SELECTOR =
+    '.quarto-alternate-formats a, .quarto-other-links a';
+
+  function addSecurityAttributes(link) {
+    if (link.getAttribute('target') === '_blank') {
+      const currentRel = link.getAttribute('rel') || '';
+      const relValues = new Set(currentRel.split(/\s+/).filter(Boolean));
+      relValues.add('noopener');
+      relValues.add('noreferrer');
+      link.setAttribute('rel', Array.from(relValues).join(' '));
+    }
+  }
+
+  function ensureBlankTarget(link) {
+    link.setAttribute('target', '_blank');
+    addSecurityAttributes(link);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[target="_blank"]').forEach(addSecurityAttributes);
+    document.querySelectorAll(SIDEBAR_LINK_SELECTOR).forEach(ensureBlankTarget);
+
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            if (node.tagName === 'A') {
+              addSecurityAttributes(node);
+            }
+            node.querySelectorAll('a[target="_blank"]').forEach(addSecurityAttributes);
+            node.querySelectorAll(SIDEBAR_LINK_SELECTOR).forEach(ensureBlankTarget);
+          }
+        });
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
+<script id="quarto-code-annotation-marker-click" type="text/javascript">
+/**
+ * Enable code annotation marker clicks to trigger line highlighting.
+ *
+ * @license MIT
+ * @copyright 2026 Mickael Canouil
+ * @author Mickael Canouil
+ *
+ * Quarto's default behaviour only triggers line highlighting when
+ * clicking the annotation list items below the code. This script
+ * extends that to also work when clicking the annotation markers
+ * (numbered circles) within the code itself.
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  /**
+   * Find the corresponding annotation list item for an anchor.
+   * @param {Element} anchor - The code annotation anchor element.
+   * @returns {Element|null} The corresponding dt element or null.
+   */
+  function findAnnotationItem(anchor) {
+    const targetCell = anchor.getAttribute('data-target-cell');
+    const targetAnnotation = anchor.getAttribute('data-target-annotation');
+
+    if (!targetCell || !targetAnnotation) return null;
+
+    return document.querySelector(
+      'dt[data-target-cell="' + targetCell + '"][data-target-annotation="' + targetAnnotation + '"]'
+    );
+  }
+
+  /**
+   * Handle click on annotation anchor.
+   * @param {Event} event - The click event.
+   */
+  function handleAnchorClick(event) {
+    const anchor = event.currentTarget;
+    const item = findAnnotationItem(anchor);
+
+    if (item) {
+      item.click();
+    }
+  }
+
+  /**
+   * Initialise click handlers for all annotation anchors.
+   */
+  function initialiseAnnotationClicks() {
+    const anchors = document.querySelectorAll('.code-annotation-anchor');
+
+    for (const anchor of anchors) {
+      if (anchor.dataset.clickHandlerAdded) continue;
+      anchor.dataset.clickHandlerAdded = 'true';
+
+      anchor.addEventListener('click', handleAnchorClick);
+    }
+  }
+
+  initialiseAnnotationClicks();
+
+  const observer = new MutationObserver(function(mutations) {
+    for (const mutation of mutations) {
+      if (mutation.addedNodes.length > 0) {
+        initialiseAnnotationClicks();
+      }
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
+
+
+
+</body></html>

@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Emma Marshall">
+<meta name="dcterms.date" content="2026-10-10">
+
+<title>Registered Analytic Models and Hypotheses – Dissertation Supplement</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pilot01/02_supplementary-analyses.html" rel="next">
+<link href="../pilot01/index.html" rel="prev">
+<link href="../logos/logo-light.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de1215aa7a72655401e1ea8563358ae8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f90b9a2f02bdf50f5114de277d3ddac9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de1215aa7a72655401e1ea8563358ae8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-10906e5c1ecb241b3dacdc47ecf0401e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f48c60ad60e7a7e0490244849dbeaddb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-10906e5c1ecb241b3dacdc47ecf0401e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<style>
+/* extensions.emmarshall.grid-background: true */
+body {
+  --grid-size: 50px;
+  --grid-color: color-mix(in srgb, var(--mc-fg) 1.5%, var(--mc-bg));
+  background-size: var(--grid-size) var(--grid-size) !important;
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px) !important;
+}
+.reveal .slide-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  --grid-size: 50px;
+  --grid-color: color-mix(in srgb, var(--mc-fg) 1.5%, var(--mc-bg));
+  background-size: var(--grid-size) var(--grid-size);
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+}
+</style>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pilot01/index.html">Pilot Study 1 Supplement: Supplementary Analyses</a></li><li class="breadcrumb-item"><a href="../pilot01/01_registered-models-hypotheses.html"><span class="chapter-title">Registered Analytic Models and Hypotheses</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../site_libs/quarto-contrib/quarto-project/emmarshall/logos/logo-light.svg" alt="Emma Marshall logo" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../site_libs/quarto-contrib/quarto-project/emmarshall/logos/logo-dark.svg" alt="Emma Marshall logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Dissertation Supplement</a> 
+        <div class="sidebar-tools-main">
+    <a href="../Dissertation-Supplement.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../pilot01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Study 1 Supplement: Supplementary Analyses</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/01_registered-models-hypotheses.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Registered Analytic Models and Hypotheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/02_supplementary-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pilot 1 Supplementary Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot01/03_verdicts-mental-state-legal-accuracy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Verdicts, Mental State and Legal Accuracy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../pilot02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pilot Study 2 Supplement: Full Analyses</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/01_analytic-framework-hypotheses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Analytic Framework and Hypotheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/02_full-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Full Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/02b_registered-analyses-in-supplement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Registered Analyses Reported in the Supplement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/03_supplementary-analyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pilot 2 Supplementary Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/04_selected-reinterpretation-model.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Selected Evidence-Reinterpretation Model (RQ3)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/05_likelihood-changes-pathways.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Likelihood Changes and Parallel-Then-Serial Pathways</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/06_exploratory-family.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exploratory Analyses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/07_search-target-endorsement.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Search-Target Endorsement (RQ7)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/08_evidence-reinterpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Evidence Reinterpretation (RQ3)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/09_robustness-diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Robustness Checks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pilot02/10_historical-simulation-planning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Simulation and Planning Outputs</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../study01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study 1 Supplement: Supplementary Tables and Figures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/01_s1-deviations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S1. <code>r SECTIONS[["S1"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/02_s2-measurement-reliability.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S2. <code>r SECTIONS[["S2"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/03_s3-manipulation-descriptives.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S3. <code>r SECTIONS[["S3"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/04_s4-full-model-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S4. <code>r SECTIONS[["S4"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/05_s5-rq1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S5. RQ1: Hindsight Mediation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/06_s6-rq2-exploratory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S6. <code>r SECTIONS[["S6"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/07_s7-rq3-exploratory-substitute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S7. RQ3: Exploratory Suspect Judgments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/08_s8-rq4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S8. <code>r SECTIONS[["S8"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/09_s9-rq5-exploratory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S9. <code>r SECTIONS[["S9"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/10_s10-rq6-attitudes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S10. <code>r SECTIONS[["S10"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/11_s11-standardized-estimates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S11. <code>r SECTIONS[["S11"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/12_s12-legal-context-fallback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S12. <code>r SECTIONS[["S12"]]</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study01/13_s13-sensitivity-sample.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">S13. <code>r SECTIONS[["S13"]]</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../study02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study 2 Supplement: Supplementary Tables and Figures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/01_s1-data-cleaning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S1")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/02_s2-descriptives.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S2")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/03_s3-manipulation-checks.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S3")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/04_s4-rq1-likelihood-reinterpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S4")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/05_s5-rq2-moral-judgments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S5")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/06_s6-rq3-officer-evaluations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S6")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/07_s7-rq4-legal-decisions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S7")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/08_s8-rq5-attitudes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S8")</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../study02/09_s9-sensitivity-sample.html" class="sidebar-item-text sidebar-link"><span class="chapter-title"><code>r section_title("S9")</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#analytic-models." id="toc-analytic-models." class="nav-link active" data-scroll-target="#analytic-models.">Analytic Models.</a></li>
+  <li><a href="#hypotheses." id="toc-hypotheses." class="nav-link" data-scroll-target="#hypotheses.">Hypotheses.</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pilot01/index.html">Pilot Study 1 Supplement: Supplementary Analyses</a></li><li class="breadcrumb-item"><a href="../pilot01/01_registered-models-hypotheses.html"><span class="chapter-title">Registered Analytic Models and Hypotheses</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Registered Analytic Models and Hypotheses</span></h1>
+</div>
+
+
+
+<div class="em-title-metadata em-style-professional">
+
+  
+  <div class="em-professional-meta-top">
+            <span class="em-professional-date">October 10, 2026</span>
+      </div>
+
+  
+    <div class="em-professional-byline">
+        <div class="em-professional-author">
+      <div class="em-professional-avatar" aria-hidden="true"></div>
+      <div class="em-professional-author-info">
+        <div class="em-professional-author-name">
+          <span class="author"><a href="https://emmawmarshall.com">Emma Marshall<em class="quarto-title-author-degree">, J.D., M.A.</em></a> <a href="https://orcid.org/0000-0001-7387-8875" class="quarto-title-author-orcid" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt="ORCID"></a></span>
+        </div>
+                <div class="em-professional-author-affiliation">
+          University of Nebraska-Lincoln
+        </div>
+              </div>
+    </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+</header>
+
+
+<section id="analytic-models." class="level4">
+<h4 class="anchored" data-anchor-id="analytic-models.">Analytic Models.</h4>
+<p>I conducted all analyses in R <span class="citation" data-cites="rcoreteam26">(<a href="#ref-rcoreteam26" role="doc-biblioref">R Core Team, 2026</a>)</span>. Each research question was tested with its own model. Chi-square tests of independence compared the content of the narratives across the four crime categories (RQ1) and across the four verdict conditions (RQ2). These tests covered the 67 automated features (i.e., the Phase 1 and Phase 2 codes), with the Benjamini–Hochberg correction applied across that family. The 14 holistic codes (i.e., the Phase 3 codes) are complete. However, all but one fell below the preregistered threshold for inter-rater reliability. I therefore used the holistic codes only in the analyses of mitigating and aggravating factors and mental states (H2a, H2b, H2c, and H3a), and I treat every result that rests on a holistic code as exploratory. I report Cramér’s <em>V</em> with a 95% confidence interval for each variable.</p>
+<p>A within-subjects one-way ANOVA tested whether post-narrative severity ratings differed across the four crime categories (RQ3, H3b). Each participant gave four ratings, one for each crime category. I applied the Greenhouse–Geisser correction when sphericity was violated. I fit the ANOVA with the afex package, computed estimated marginal means and planned contrasts with emmeans <span class="citation" data-cites="lenth_piaskowski17">(<a href="#ref-lenth_piaskowski17" role="doc-biblioref">Lenth &amp; Piaskowski, 2017</a>)</span>, and computed effect sizes with the effectsize package. Registered planned contrasts and main effects were tested at α = .05 without adjustment. The one exception was the follow-up of interactions. I corrected the simple effects that probe the interaction of verdict condition and factor type (H2b) within that family. I used Tukey’s HSD when the follow-up compared all pairs of estimated marginal means and the Bonferroni correction when it tested a specified subset.</p>
+<p>Two multiple regressions tested whether scores on the Modified Abortion Attitudes Scale predicted each participant’s mean severity and mean punishment ratings across the four crime categories (RQ4, H4). Age, political orientation, and religiosity were covariates. I compared the card-sort consensus with the preregistered threshold descriptively (RQ5). Mixed-effects logistic regressions tested whether the features of each scenario predicted the binary judgment that the scenario was “definitely yes, this is a crime” (H5). Each model had a random intercept for participants. I fit these models with the lme4 and lmerTest packages. A pooled McNemar’s test across the 20 scenarios compared descriptive and normative crime judgments (RQ6, H6). The legal-accuracy analysis used one-sample binomial tests against chance (.50), for each scenario and pooled across scenarios. I computed the McNemar and exact binomial tests with the exact2x2 package. Two mixed-effects logistic regressions of the card-sort crime judgments tested the attitude hypotheses (RQ7, H7a and H7b). The first model pooled the two judgment types. The second added the interaction of abortion attitudes and judgment type. Both models had crossed random intercepts for participants and scenarios, and both were fit with lme4 and lmerTest.</p>
+<p>I report effect sizes (i.e., partial <span class="math inline">\(\eta^2\)</span>, Cramér’s <em>V</em>, and odds ratios) and 95% confidence intervals for all tests. The cluster analysis is exploratory. It used partitioning around medoids on Gower distance within each crime category. I fit it with the cluster package and evaluated it with the silhouette width and the gap statistic. I computed scale descriptives and reliability coefficients with the psych package. The text analyses of the narratives used quanteda <span class="citation" data-cites="benoit_etal18">(<a href="#ref-benoit_etal18" role="doc-biblioref">Benoit et al., 2018</a>)</span>, with quanteda.textstats and quanteda.textplots for keyness and text statistics and udpipe for linguistic annotation. I computed inter-rater reliability (i.e., Cohen’s and Fleiss’s kappa) with the irr package.</p>
+<p>The two kinds of mixed-effects logistic regression take the following multilevel form. In the feature-prediction models (H5), crime judgments <span class="math inline">\(i\)</span> are nested within participants <span class="math inline">\(j\)</span>. Each scenario feature <span class="math inline">\(F\)</span> enters as a single Level-1 predictor:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Level 1:} \quad &amp; \mathrm{logit}\big(\mathrm{Pr}(\text{crime}_{ij} = 1)\big) = \beta_{0j} + \beta_{1}\,F_{ij} \\
+\text{Level 2:} \quad &amp; \beta_{0j} = \gamma_{00} + u_{0j}, \quad u_{0j} \sim \mathcal{N}(0,\ \tau^{2}_{\text{participant}}).
+\end{aligned}
+\]</span></p>
+<p>The attitude models (H7a and H7b) cross each judgment with both participants <span class="math inline">\(j\)</span> and scenarios <span class="math inline">\(k\)</span>. Standardized abortion attitudes (<span class="math inline">\(\text{AAS}_j\)</span>) enter as a participant-level (Level-2) predictor, and judgment type (descriptive vs.&nbsp;normative) enters as a Level-1 predictor:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Level 1:} \quad &amp; \mathrm{logit}\big(\mathrm{Pr}(\text{crime}_{ijk} = 1)\big) = \beta_{0jk} + \beta_{1jk}\,\text{JudgmentType}_{ijk} \\
+\text{Level 2:} \quad &amp; \beta_{0jk} = \gamma_{00} + \gamma_{01}\,\text{AAS}_{j} + u_{0j} + v_{0k} \\
+&amp; \beta_{1jk} = \gamma_{10} + \gamma_{11}\,\text{AAS}_{j} \\
+&amp; u_{0j} \sim \mathcal{N}(0,\ \tau^{2}_{\text{participant}}), \quad v_{0k} \sim \mathcal{N}(0,\ \tau^{2}_{\text{scenario}}).
+\end{aligned}
+\]</span></p>
+<p>H7b tests whether the association between abortion attitudes and crime judgments differs by judgment type (<span class="math inline">\(\gamma_{11}\)</span>). H7a tests the main-effects model, in which <span class="math inline">\(\gamma_{11} = 0\)</span>.</p>
+</section>
+<section id="hypotheses." class="level4">
+<h4 class="anchored" data-anchor-id="hypotheses.">Hypotheses.</h4>
+<p>I grouped the seven preregistered Pilot 1 questions by the judgments participants made. RQ1 to RQ3 concerned the narratives: whether their features, mitigating and aggravating factors, and attributed mental states differed across crime categories and verdict conditions. RQ4 and RQ7 concerned abortion attitudes, measured with the Modified Abortion Attitudes Scale, as predictors of severity, punishment, and card-sort crime judgments. I predicted a stronger association with normative than descriptive judgments. The card-sort analyses (RQ5 and RQ6) tested whether at least four scenarios met the preregistered criterion for broad disagreement, whether the features of the scenarios predicted the crime judgments, and whether descriptive and normative judgments diverged. The full hypothesis statements and analysis plan are in the preregistration on the study’s <a href="https://osf.io/zndwc/">OSF page</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><a href="#tbl-pilot1-hyp" class="quarto-xref">Table&nbsp;<span>P1.1</span></a> lists the primary hypotheses of Pilot 1 by research question.</p>
+<div class="cell">
+<div class="code-with-filename code-window-auto">
+<div class="code-with-filename-file"><pre><strong>r</strong></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Built from the Pilot 1 presentation layer in the sibling studies project</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (osf/pilot01/pilot01_hypotheses_summary.csv), CONFIRMATORY ROWS ONLY, so the</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># printed statement is the ratified presentation text and Outcome is the</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ratified call. The registry lockfile stays the authority for registered RH</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># wording and is not read here. Presentation identifiers H1-H7b are disclosed in</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># deviations item 14. The nine exploratory analyses are reported in the</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># companion document, not in this table -- see the caption.</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Note marks: superscript a/b/c, with the dagger family as the fallback face</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># where the superscript glyphs do not resolve in a given output format.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>.p1_marks <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">a =</span> <span class="st">"\u1d43"</span>, <span class="at">b =</span> <span class="st">"\u1d47"</span>, <span class="at">c =</span> <span class="st">"\u1d9c"</span>)  <span class="co"># fallback: †, ‡, §</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>.p1_hyp <span class="ot">&lt;-</span> .p1_hyp_sum <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(tag) <span class="sc">|</span> tag <span class="sc">!=</span> <span class="st">"Exploratory"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">label   =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(tag) <span class="sc">|</span> tag <span class="sc">==</span> <span class="st">""</span>, number, <span class="fu">paste0</span>(number, <span class="st">" ("</span>, tag, <span class="st">")"</span>)),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The summary writes each statement as the registration did ("We predicted"); the dissertation uses I.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">revised =</span> <span class="fu">sub</span>(<span class="st">"^We (predicted|expected|explored)"</span>, <span class="st">"I </span><span class="sc">\\</span><span class="st">1"</span>, hypothesis),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">outcome =</span> <span class="fu">paste0</span>(outcome,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">ifelse</span>(<span class="fu">is.na</span>(note_letter) <span class="sc">|</span> note_letter <span class="sc">==</span> <span class="st">""</span>, <span class="st">""</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">unname</span>(.p1_marks[note_letter])))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Guards: the confirmatory roster is 11 rows over 7 research-question bands, and</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># apa_hypotheses() requires each band's rows to be adjacent. Fail loudly rather</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co"># than print a short or mis-banded table.</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pilot1 hypotheses table: confirmatory roster is not 11 rows"</span> <span class="ot">=</span> <span class="fu">nrow</span>(.p1_hyp) <span class="sc">==</span> <span class="dv">11</span>L,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pilot1 hypotheses table: bands are not contiguous"</span> <span class="ot">=</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">anyDuplicated</span>(<span class="fu">rle</span>(<span class="fu">as.character</span>(.p1_hyp<span class="sc">$</span>band))<span class="sc">$</span>values)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>dissAPA<span class="sc">::</span><span class="fu">apa_render</span>(</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  dissAPA<span class="sc">::</span><span class="fu">apa_hypotheses</span>(</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    .p1_hyp[, <span class="fu">c</span>(<span class="st">"label"</span>, <span class="st">"title"</span>, <span class="st">"revised"</span>, <span class="st">"outcome"</span>, <span class="st">"band"</span>)],</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">outcome =</span> <span class="st">"outcome"</span>,</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">note =</span> <span class="fu">paste0</span>(</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>      .p1_marks[<span class="st">"a"</span>], <span class="st">" The coded mental-state variable fell below its preregistered reliability "</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>      <span class="st">"threshold (ICC = .67 against a target of .80); results resting on it are exploratory. "</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>      .p1_marks[<span class="st">"b"</span>], <span class="st">" Gestational age could not be estimated (deviation item 5). Method type was "</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>      <span class="st">"recoded as abortion-pill use, coded yes for the four scenarios that involved abortion pills and no "</span>,</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>      <span class="st">"for the rest, including the scenarios with pills for miscarriage management or emergency "</span>,</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>      <span class="st">"contraception. The remaining features tested as registered, with the intent cue the strongest "</span>,</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>      <span class="st">"predictor as predicted. "</span>,</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>      .p1_marks[<span class="st">"c"</span>], <span class="st">" The judgments diverged reliably, but opposite to the registered direction: "</span>,</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>      <span class="st">"more scenarios were endorsed as conduct that should be criminal than as currently "</span>,</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>      <span class="st">"criminal."</span>)),</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  <span class="at">engine =</span> <span class="st">"auto"</span>, <span class="at">fontsize =</span> <span class="fl">0.85</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tbl-pilot1-hyp" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption style="color: inherit; font-size: inherit; text-align: left;" class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pilot1-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<strong>Table&nbsp;P1.1</strong><br>
+<em>Pilot 1 primary hypotheses by research question. The exploratory and descriptive analyses are listed in the analysis plan and are not shown here.</em>
+</figcaption>
+<div aria-describedby="tbl-pilot1-hyp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_8xfhbjpfsjsz1u6ia37t = TinyTable.createTableFunctions("tinytable_8xfhbjpfsjsz1u6ia37t");
+      // tinytable span after
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(16, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(14, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(12, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(10, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(7, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(3, 1, 1, 4) })
+      window.addEventListener('load', function () { tableFns_8xfhbjpfsjsz1u6ia37t.spanCell(1, 1, 1, 4) })
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '18', j: 2 }, { i: '18', j: 3 }, { i: '18', j: 4 } ], css_id: 'tinytable_css_7o51ymv9fbfm0j0h7kyd',}, 
+          { positions: [ { i: '2', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '11', j: 2 }, { i: '13', j: 2 }, { i: '15', j: 2 }, { i: '17', j: 2 }, { i: '2', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '6', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '11', j: 3 }, { i: '13', j: 3 }, { i: '15', j: 3 }, { i: '17', j: 3 }, { i: '2', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '6', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '11', j: 4 }, { i: '13', j: 4 }, { i: '15', j: 4 }, { i: '17', j: 4 } ], css_id: 'tinytable_css_u7jmu3xx2hq7n2hnaps1',}, 
+          { positions: [ { i: '0', j: 2 }, { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_5y7yn9wkb3jzk493mjch',}, 
+          { positions: [ { i: '18', j: 1 } ], css_id: 'tinytable_css_jiuacmsevu4lhf78hna8',}, 
+          { positions: [ { i: '2', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '11', j: 1 }, { i: '13', j: 1 }, { i: '15', j: 1 }, { i: '17', j: 1 } ], css_id: 'tinytable_css_zll9v0r3m1ccoxs8e1ry',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '3', j: 1 }, { i: '7', j: 1 }, { i: '10', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '16', j: 1 }, { i: '1', j: 2 }, { i: '3', j: 2 }, { i: '7', j: 2 }, { i: '10', j: 2 }, { i: '12', j: 2 }, { i: '14', j: 2 }, { i: '16', j: 2 }, { i: '1', j: 3 }, { i: '3', j: 3 }, { i: '7', j: 3 }, { i: '10', j: 3 }, { i: '12', j: 3 }, { i: '14', j: 3 }, { i: '16', j: 3 }, { i: '1', j: 4 }, { i: '3', j: 4 }, { i: '7', j: 4 }, { i: '10', j: 4 }, { i: '12', j: 4 }, { i: '14', j: 4 }, { i: '16', j: 4 } ], css_id: 'tinytable_css_xa7n68nvrd4vfjzllrgv',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_6rgurl4m0b7zdr91jn4z',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_8xfhbjpfsjsz1u6ia37t.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_7o51ymv9fbfm0j0h7kyd, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_7o51ymv9fbfm0j0h7kyd {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_u7jmu3xx2hq7n2hnaps1, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_u7jmu3xx2hq7n2hnaps1 { text-align: center; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_5y7yn9wkb3jzk493mjch, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_5y7yn9wkb3jzk493mjch {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; font-style: italic; text-align: center; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_jiuacmsevu4lhf78hna8, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_jiuacmsevu4lhf78hna8 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; text-align: left; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_zll9v0r3m1ccoxs8e1ry, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_zll9v0r3m1ccoxs8e1ry { font-weight: bold; text-align: left; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_xa7n68nvrd4vfjzllrgv, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_xa7n68nvrd4vfjzllrgv { font-weight: bold; font-style: italic; text-align: left; font-size: 0.85em }
+    #tinytable_8xfhbjpfsjsz1u6ia37t td.tinytable_css_6rgurl4m0b7zdr91jn4z, #tinytable_8xfhbjpfsjsz1u6ia37t th.tinytable_css_6rgurl4m0b7zdr91jn4z {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: black; --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; font-weight: bold; font-style: italic; text-align: left; font-size: 0.85em }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_8xfhbjpfsjsz1u6ia37t" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1">Hypothesis Number</th>
+                <th scope="col" data-row="0" data-col="2">Hypothesis Title</th>
+                <th scope="col" data-row="0" data-col="3">Hypothesis</th>
+                <th scope="col" data-row="0" data-col="4">Outcome</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan="4">Note. ᵃ The coded mental-state variable fell below its preregistered reliability threshold (ICC = .67 against a target of .80); results resting on it are exploratory. ᵇ Gestational age could not be estimated (deviation item 5). Method type was recoded as abortion-pill use, coded yes for the four scenarios that involved abortion pills and no for the rest, including the scenarios with pills for miscarriage management or emergency contraception. The remaining features tested as registered, with the intent cue the strongest predictor as predicted. ᶜ The judgments diverged reliably, but opposite to the registered direction: more scenarios were endorsed as conduct that should be criminal than as currently criminal.</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">Hypotheses relating to narrative prototypes (RQ1)</td>
+                  <td data-row="1" data-col="2">Hypotheses relating to narrative prototypes (RQ1)</td>
+                  <td data-row="1" data-col="3">Hypotheses relating to narrative prototypes (RQ1)</td>
+                  <td data-row="1" data-col="4">Hypotheses relating to narrative prototypes (RQ1)</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">H1</td>
+                  <td data-row="2" data-col="2">Crime-category differences on narrative features</td>
+                  <td data-row="2" data-col="3">I predicted that the four crime categories would differ in the narrative features people wrote about, each category showing a distinct profile across the coded dimensions.</td>
+                  <td data-row="2" data-col="4">Supported</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Hypotheses relating to verdict condition and narrative content (RQ2)</td>
+                  <td data-row="3" data-col="2">Hypotheses relating to verdict condition and narrative content (RQ2)</td>
+                  <td data-row="3" data-col="3">Hypotheses relating to verdict condition and narrative content (RQ2)</td>
+                  <td data-row="3" data-col="4">Hypotheses relating to verdict condition and narrative content (RQ2)</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">H2a</td>
+                  <td data-row="4" data-col="2">Verdict Condition on Total Factor Count</td>
+                  <td data-row="4" data-col="3">I predicted that participants would write longer, more elaborated narratives under the wrongful-verdict instructions than under the rightful-verdict instructions.</td>
+                  <td data-row="4" data-col="4">Not supported</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">H2b</td>
+                  <td data-row="5" data-col="2">Verdict Condition × Mitigating vs. Aggravating Factors</td>
+                  <td data-row="5" data-col="3">I predicted that this wrongful-versus-rightful elaboration difference would be larger for mitigating detail than for aggravating detail.</td>
+                  <td data-row="5" data-col="4">Not supported</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">H2c</td>
+                  <td data-row="6" data-col="2">Mental State by Actual Culpability</td>
+                  <td data-row="6" data-col="3">I predicted that narratives whose underlying facts implied guilt would contain more purposeful or knowing intent signals than narratives whose facts implied innocence.</td>
+                  <td data-row="6" data-col="4">Not supportedᵃ</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">Hypotheses relating to mental state and severity across crime categories (RQ3)</td>
+                  <td data-row="7" data-col="2">Hypotheses relating to mental state and severity across crime categories (RQ3)</td>
+                  <td data-row="7" data-col="3">Hypotheses relating to mental state and severity across crime categories (RQ3)</td>
+                  <td data-row="7" data-col="4">Hypotheses relating to mental state and severity across crime categories (RQ3)</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">H3a</td>
+                  <td data-row="8" data-col="2">Mental State × Crime Category</td>
+                  <td data-row="8" data-col="3">I predicted that intent signals would vary by crime category, with self-managed-abortion narratives skewing toward purposeful or knowing intent and chemical-endangerment narratives toward reckless or negligent intent, and fetal homicide and improper disposal showing their own profiles.</td>
+                  <td data-row="8" data-col="4">Supportedᵃ</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">H3b</td>
+                  <td data-row="9" data-col="2">Crime Category on Severity</td>
+                  <td data-row="9" data-col="3">I predicted that perceived severity would differ across the four categories, with fetal homicide and chemical endangerment rated more severe than self-managed abortion and improper disposal of remains.</td>
+                  <td data-row="9" data-col="4">Not supported</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1">Hypotheses relating to abortion attitudes and post-narrative ratings (RQ4)</td>
+                  <td data-row="10" data-col="2">Hypotheses relating to abortion attitudes and post-narrative ratings (RQ4)</td>
+                  <td data-row="10" data-col="3">Hypotheses relating to abortion attitudes and post-narrative ratings (RQ4)</td>
+                  <td data-row="10" data-col="4">Hypotheses relating to abortion attitudes and post-narrative ratings (RQ4)</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1">H4</td>
+                  <td data-row="11" data-col="2">Attitudes on Severity and Punishment</td>
+                  <td data-row="11" data-col="3">I predicted that more restrictive abortion attitudes would predict higher severity ratings and harsher recommended punishment, controlling for demographics.</td>
+                  <td data-row="11" data-col="4">Supported</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Hypotheses relating to scenario features and crime classification (RQ5)</td>
+                  <td data-row="12" data-col="2">Hypotheses relating to scenario features and crime classification (RQ5)</td>
+                  <td data-row="12" data-col="3">Hypotheses relating to scenario features and crime classification (RQ5)</td>
+                  <td data-row="12" data-col="4">Hypotheses relating to scenario features and crime classification (RQ5)</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">H5</td>
+                  <td data-row="13" data-col="2">Scenario-Feature Predictors</td>
+                  <td data-row="13" data-col="3">I predicted that intent signals, whether a medical intervention occurred, and gestational age would predict whether people classified a scenario as a crime, with more incriminating intent and later gestational ages raising the odds, and intent the strongest predictor.</td>
+                  <td data-row="13" data-col="4">Supportedᵇ</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">Hypothesis relating to descriptive versus normative judgments (RQ6)</td>
+                  <td data-row="14" data-col="2">Hypothesis relating to descriptive versus normative judgments (RQ6)</td>
+                  <td data-row="14" data-col="3">Hypothesis relating to descriptive versus normative judgments (RQ6)</td>
+                  <td data-row="14" data-col="4">Hypothesis relating to descriptive versus normative judgments (RQ6)</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">H6</td>
+                  <td data-row="15" data-col="2">Descriptive–Normative Divergence</td>
+                  <td data-row="15" data-col="3">I predicted a gap between what people thought the law is and what they thought it should be, such that more scenarios were judged crimes under current law than people thought should be crimes.</td>
+                  <td data-row="15" data-col="4">Not supportedᶜ</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="1">Hypotheses relating to abortion attitudes and crime judgments (RQ7)</td>
+                  <td data-row="16" data-col="2">Hypotheses relating to abortion attitudes and crime judgments (RQ7)</td>
+                  <td data-row="16" data-col="3">Hypotheses relating to abortion attitudes and crime judgments (RQ7)</td>
+                  <td data-row="16" data-col="4">Hypotheses relating to abortion attitudes and crime judgments (RQ7)</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="1">H7a</td>
+                  <td data-row="17" data-col="2">Attitudes on Crime Judgments</td>
+                  <td data-row="17" data-col="3">I predicted that more restrictive abortion attitudes would raise the odds of classifying a scenario as a crime, across both kinds of judgment, controlling for demographics.</td>
+                  <td data-row="17" data-col="4">Supported</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="1">H7b</td>
+                  <td data-row="18" data-col="2">Attitudes × Judgment Type Interaction</td>
+                  <td data-row="18" data-col="3">I predicted that the attitude effect would be larger for judgments of what should be a crime than for judgments of what currently is one.</td>
+                  <td data-row="18" data-col="4">Supported</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-benoit_etal18" class="csl-entry" role="listitem">
+Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., &amp; Matsuo, A. (2018). Quanteda: <span>An R</span> package for the quantitative analysis of textual data. <em>Journal of Open Source Software</em>, <em>3</em>(30), 774. <a href="https://doi.org/10.21105/joss.00774">https://doi.org/10.21105/joss.00774</a>
+</div>
+<div id="ref-lenth_piaskowski17" class="csl-entry" role="listitem">
+Lenth, R. V., &amp; Piaskowski, J. (2017). <em>Emmeans: <span>Estimated Marginal Means</span>, aka <span>Least-Squares Means</span></em> (p. 2.0.3) [Computer software]. Comprehensive R Archive Network. <a href="https://doi.org/10.32614/CRAN.package.emmeans">https://doi.org/10.32614/CRAN.package.emmeans</a>
+</div>
+<div id="ref-rcoreteam26" class="csl-entry" role="listitem">
+R Core Team. (2026). <em>R: A language and environment for statistical computing</em> [Manual]. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Departures from the preregistered analysis plan are recorded in the deviations record on the study’s <a href="https://osf.io/zndwc/">OSF page</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../pilot01/index.html" class="pagination-link" aria-label="Pilot Study 1 Supplement: Supplementary Analyses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Pilot Study 1 Supplement: Supplementary Analyses</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../pilot01/02_supplementary-analyses.html" class="pagination-link" aria-label="Pilot 1 Supplementary Analyses">
+        <span class="nav-page-text"><span class="chapter-title">Pilot 1 Supplementary Analyses</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Emma W. Marshall — Dissertation Supplement</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Department of Psychology, University of Nebraska–Lincoln</p>
+</div>
+  </div>
+</footer>
+<script id="quarto-ordinal-dates" type="text/javascript">
+  const dateElements = document.querySelectorAll(
+    "p.date, p.date-modified, div.listing-date, div.listing-file-modified, span.em-professional-date, span.em-professional-modified, span.em-academic-date, span.em-academic-modified"
+  );
+  dateElements.forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(
+      /(\d+)(st|nd|rd|th)/g,
+      "$1<sup style='font-size:0.5em;font-style:italic;'>$2</sup>"
+    );
+  });
+</script>
+<script id="quarto-current-year" type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.getElementById('current-year');
+    if (el) el.textContent = new Date().getFullYear();
+  });
+</script>
+<script id="quarto-categories-alphabetical" type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const categories = document.querySelectorAll(".quarto-listing-category .category");
+    const container = document.querySelector(".quarto-listing-category");
+    if (!container || categories.length === 0) return;
+
+    const categoryMap = {};
+    categories.forEach(category => {
+      const dataCategory = category.getAttribute("data-category");
+      const decodedCategory = atob(dataCategory);
+      const firstLetter = decodedCategory.charAt(0).toUpperCase();
+      if (!categoryMap[firstLetter]) {
+        categoryMap[firstLetter] = [];
+      }
+      categoryMap[firstLetter].push(category);
+    });
+
+    Object.keys(categoryMap).sort().forEach(letter => {
+      const groupDiv = document.createElement("div");
+      groupDiv.classList.add("category-group");
+      const button = document.createElement("div");
+      button.classList.add("category", "collapsed");
+      button.setAttribute("data-bs-toggle", "collapse");
+      button.setAttribute("data-bs-target", `#collapse-category-${letter}`);
+      button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-label", `Toggle ${letter} categories`);
+      button.setAttribute("aria-controls", `collapse-category-${letter}`);
+      button.setAttribute("role", "button");
+      button.innerHTML = `<div style="font-style: italic;">${letter}</div>`;
+      const collapseDiv = document.createElement("div");
+      collapseDiv.classList.add("collapse");
+      collapseDiv.id = `collapse-category-${letter}`;
+
+      if (letter.length === 0) {
+        categoryMap[letter].forEach(category => {
+          container.appendChild(category);
+        });
+      } else {
+        categoryMap[letter].forEach(category => {
+          collapseDiv.appendChild(category);
+        });
+        groupDiv.appendChild(button);
+        groupDiv.appendChild(collapseDiv);
+        container.appendChild(groupDiv);
+      }
+    });
+  });
+</script>
+<script id="quarto-extensions-listing-clipboardjs" type="text/javascript">
+  window.document.addEventListener('DOMContentLoaded', (event) => {
+    const initialiseModalClipboard = () => {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach((modal) => {
+        const modalId = modal.getAttribute('id');
+        if (!modalId) return;
+
+        const copyButtons = modal.querySelectorAll('.code-copy-button');
+        if (copyButtons.length === 0) return;
+
+        copyButtons.forEach((button) => {
+          button.setAttribute('data-in-quarto-modal', modalId);
+        });
+
+        const clipboardModal = new window.ClipboardJS(
+          `.code-copy-button[data-in-quarto-modal="${modalId}"]`,
+          {
+            text: (trigger) => {
+              const codeEl = trigger.previousElementSibling.cloneNode(true);
+              const annotations = codeEl.querySelectorAll('[class*="code-annotation-"]');
+              annotations.forEach((annotation) => annotation.remove());
+              return codeEl.innerText;
+            },
+            container: modal
+          }
+        );
+
+        clipboardModal.on('success', (e) => {
+          const button = e.trigger;
+          button.blur();
+          button.classList.add('code-copy-button-checked');
+          const currentTitle = button.getAttribute('title');
+          button.setAttribute('title', 'Copied!');
+
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute('data-bs-toggle', 'tooltip');
+            button.setAttribute('data-bs-placement', 'left');
+            button.setAttribute('data-bs-title', 'Copied!');
+            tooltip = new bootstrap.Tooltip(button, {
+              trigger: 'manual',
+              customClass: 'code-copy-button-tooltip',
+              offset: [0, -8]
+            });
+            tooltip.show();
+          }
+
+          setTimeout(() => {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute('data-bs-title');
+              button.removeAttribute('data-bs-toggle');
+              button.removeAttribute('data-bs-placement');
+            }
+            button.setAttribute('title', currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+
+          e.clearSelection();
+        });
+      });
+    };
+
+    initialiseModalClipboard();
+    document.addEventListener('shown.bs.modal', () => {
+      initialiseModalClipboard();
+    });
+  });
+</script>
+<script id="quarto-external-links" type="text/javascript">
+  // Workaround for https://github.com/quarto-dev/quarto-cli/issues/10730
+  const SIDEBAR_LINK_SELECTOR =
+    '.quarto-alternate-formats a, .quarto-other-links a';
+
+  function addSecurityAttributes(link) {
+    if (link.getAttribute('target') === '_blank') {
+      const currentRel = link.getAttribute('rel') || '';
+      const relValues = new Set(currentRel.split(/\s+/).filter(Boolean));
+      relValues.add('noopener');
+      relValues.add('noreferrer');
+      link.setAttribute('rel', Array.from(relValues).join(' '));
+    }
+  }
+
+  function ensureBlankTarget(link) {
+    link.setAttribute('target', '_blank');
+    addSecurityAttributes(link);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[target="_blank"]').forEach(addSecurityAttributes);
+    document.querySelectorAll(SIDEBAR_LINK_SELECTOR).forEach(ensureBlankTarget);
+
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            if (node.tagName === 'A') {
+              addSecurityAttributes(node);
+            }
+            node.querySelectorAll('a[target="_blank"]').forEach(addSecurityAttributes);
+            node.querySelectorAll(SIDEBAR_LINK_SELECTOR).forEach(ensureBlankTarget);
+          }
+        });
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
+<script id="quarto-code-annotation-marker-click" type="text/javascript">
+/**
+ * Enable code annotation marker clicks to trigger line highlighting.
+ *
+ * @license MIT
+ * @copyright 2026 Mickael Canouil
+ * @author Mickael Canouil
+ *
+ * Quarto's default behaviour only triggers line highlighting when
+ * clicking the annotation list items below the code. This script
+ * extends that to also work when clicking the annotation markers
+ * (numbered circles) within the code itself.
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  /**
+   * Find the corresponding annotation list item for an anchor.
+   * @param {Element} anchor - The code annotation anchor element.
+   * @returns {Element|null} The corresponding dt element or null.
+   */
+  function findAnnotationItem(anchor) {
+    const targetCell = anchor.getAttribute('data-target-cell');
+    const targetAnnotation = anchor.getAttribute('data-target-annotation');
+
+    if (!targetCell || !targetAnnotation) return null;
+
+    return document.querySelector(
+      'dt[data-target-cell="' + targetCell + '"][data-target-annotation="' + targetAnnotation + '"]'
+    );
+  }
+
+  /**
+   * Handle click on annotation anchor.
+   * @param {Event} event - The click event.
+   */
+  function handleAnchorClick(event) {
+    const anchor = event.currentTarget;
+    const item = findAnnotationItem(anchor);
+
+    if (item) {
+      item.click();
+    }
+  }
+
+  /**
+   * Initialise click handlers for all annotation anchors.
+   */
+  function initialiseAnnotationClicks() {
+    const anchors = document.querySelectorAll('.code-annotation-anchor');
+
+    for (const anchor of anchors) {
+      if (anchor.dataset.clickHandlerAdded) continue;
+      anchor.dataset.clickHandlerAdded = 'true';
+
+      anchor.addEventListener('click', handleAnchorClick);
+    }
+  }
+
+  initialiseAnnotationClicks();
+
+  const observer = new MutationObserver(function(mutations) {
+    for (const mutation of mutations) {
+      if (mutation.addedNodes.length > 0) {
+        initialiseAnnotationClicks();
+      }
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
+
+
+
+</body></html>

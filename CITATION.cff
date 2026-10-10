@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this supplement, please cite it as below."
+type: dataset
+title: "Dissertation Supplement: What to Suspect When They're Expecting: Abortion Ambiguity, Hindsight Bias, and Probable Cause Determinations in Pregnancy Loss Investigations After Dobbs"
+abstract: "Supplementary tables, figures, and analyses for the four studies (Pilot Study 1, Pilot Study 2, Study 1, and Study 2) reported in Emma W. Marshall's dissertation, What to Suspect When They're Expecting: Abortion Ambiguity, Hindsight Bias, and Probable Cause Determinations in Pregnancy Loss Investigations After Dobbs (University of Nebraska–Lincoln, 2026). The archive holds the rendered HTML book; open docs/index.html. Online version: https://emmarshall.github.io/dissertation-supplement/"
+authors:
+  - family-names: Marshall
+    given-names: Emma W.
+    affiliation: "University of Nebraska–Lincoln"
+version: 1.0.0
+license: CC-BY-4.0
+url: "https://emmarshall.github.io/dissertation-supplement/"
+repository-code: "https://github.com/emmarshall/dissertation-supplement"
+keywords:
+  - hindsight bias
+  - probable cause
+  - Fourth Amendment
+  - pregnancy loss
+  - self-managed abortion
+  - legal decision making
