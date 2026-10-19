@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="468.00pt" height="306.00pt" viewBox="0 0 468.00 306.00" role="group" aria-labelledby="study01_design-title study01_design-desc">
+  <g class="svglite">
+    <defs>
+      <style type="text/css"><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+    </defs>
+    <rect width="100%" height="100%" style="stroke: none; fill: #FBFAF7;"/>
+    <defs>
+      <clipPath id="cpMC4wMHw0NjguMDB8MC4wMHwzMDYuMDA=">
+        <rect x="0.00" y="0.00" width="468.00" height="306.00"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#cpMC4wMHw0NjguMDB8MC4wMHwzMDYuMDA=)">
+      <rect x="0.00" y="0.00" width="468.00" height="306.00" style="stroke-width: 0.75; stroke: none; fill: #FBFAF7;"/>
+      <polygon points="142.48,186.00 233.52,186.00 233.34,186.00 234.06,185.97 234.76,185.82 235.44,185.57 236.06,185.21 236.62,184.75 237.10,184.21 237.49,183.60 237.77,182.94 237.94,182.24 238.00,181.52 238.00,181.52 238.00,114.48 238.00,114.48 237.94,113.76 237.77,113.06 237.49,112.40 237.10,111.79 236.62,111.25 236.06,110.79 235.44,110.43 234.76,110.18 234.06,110.03 233.52,110.00 142.48,110.00 143.02,110.03 142.30,110.00 141.59,110.09 140.89,110.29 140.24,110.60 139.65,111.01 139.13,111.51 138.69,112.09 138.36,112.73 138.13,113.41 138.01,114.12 138.00,114.48 138.00,181.52 138.01,181.16 138.01,181.88 138.13,182.59 138.36,183.27 138.69,183.91 139.13,184.49 139.65,184.99 140.24,185.40 140.89,185.71 141.59,185.91 142.30,186.00 " style="stroke-width: 1.05; stroke: #626C7C; fill: #F3F1EA;"/>
+      <text x="188.00" y="141.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.86px" lengthAdjust="spacingAndGlyphs">Abortion</text>
+      <text x="188.00" y="151.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="22.02px" lengthAdjust="spacingAndGlyphs">None</text>
+      <text x="188.00" y="161.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="163.78,163.00 212.22,163.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <polygon points="250.48,186.00 341.52,186.00 341.34,186.00 342.06,185.97 342.76,185.82 343.44,185.57 344.06,185.21 344.62,184.75 345.10,184.21 345.49,183.60 345.77,182.94 345.94,182.24 346.00,181.52 346.00,181.52 346.00,114.48 346.00,114.48 345.94,113.76 345.77,113.06 345.49,112.40 345.10,111.79 344.62,111.25 344.06,110.79 343.44,110.43 342.76,110.18 342.06,110.03 341.52,110.00 250.48,110.00 251.02,110.03 250.30,110.00 249.59,110.09 248.89,110.29 248.24,110.60 247.65,111.01 247.13,111.51 246.69,112.09 246.36,112.73 246.13,113.41 246.01,114.12 246.00,114.48 246.00,181.52 246.01,181.16 246.01,181.88 246.13,182.59 246.36,183.27 246.69,183.91 247.13,184.49 247.65,184.99 248.24,185.40 248.89,185.71 249.59,185.91 250.30,186.00 " style="stroke-width: 1.05; stroke: #2C6FBB; fill: #E4EDF8;"/>
+      <text x="296.00" y="141.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.86px" lengthAdjust="spacingAndGlyphs">Abortion</text>
+      <text x="296.00" y="151.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="19.16px" lengthAdjust="spacingAndGlyphs">SMA</text>
+      <text x="296.00" y="161.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="271.78,163.00 320.22,163.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <polygon points="358.48,186.00 449.52,186.00 449.34,186.00 450.06,185.97 450.76,185.82 451.44,185.57 452.06,185.21 452.62,184.75 453.10,184.21 453.49,183.60 453.77,182.94 453.94,182.24 454.00,181.52 454.00,181.52 454.00,114.48 454.00,114.48 453.94,113.76 453.77,113.06 453.49,112.40 453.10,111.79 452.62,111.25 452.06,110.79 451.44,110.43 450.76,110.18 450.06,110.03 449.52,110.00 358.48,110.00 359.02,110.03 358.30,110.00 357.59,110.09 356.89,110.29 356.24,110.60 355.65,111.01 355.13,111.51 354.69,112.09 354.36,112.73 354.13,113.41 354.01,114.12 354.00,114.48 354.00,181.52 354.01,181.16 354.01,181.88 354.13,182.59 354.36,183.27 354.69,183.91 355.13,184.49 355.65,184.99 356.24,185.40 356.89,185.71 357.59,185.91 358.30,186.00 " style="stroke-width: 1.05; stroke: #A83E43; fill: #F8DCDA;"/>
+      <text x="404.00" y="141.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #A83E43; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.86px" lengthAdjust="spacingAndGlyphs">Abortion</text>
+      <text x="404.00" y="151.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #A83E43; font-family: &quot;IBM Plex Sans&quot;;" textLength="38.78px" lengthAdjust="spacingAndGlyphs">Financial</text>
+      <text x="404.00" y="161.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="379.78,163.00 428.22,163.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <polygon points="142.48,276.00 233.52,276.00 233.34,276.00 234.06,275.97 234.76,275.82 235.44,275.57 236.06,275.21 236.62,274.75 237.10,274.21 237.49,273.60 237.77,272.94 237.94,272.24 238.00,271.52 238.00,271.52 238.00,204.48 238.00,204.48 237.94,203.76 237.77,203.06 237.49,202.40 237.10,201.79 236.62,201.25 236.06,200.79 235.44,200.43 234.76,200.18 234.06,200.03 233.52,200.00 142.48,200.00 143.02,200.03 142.30,200.00 141.59,200.09 140.89,200.29 140.24,200.60 139.65,201.01 139.13,201.51 138.69,202.09 138.36,202.73 138.13,203.41 138.01,204.12 138.00,204.48 138.00,271.52 138.01,271.16 138.01,271.88 138.13,272.59 138.36,273.27 138.69,273.91 139.13,274.49 139.65,274.99 140.24,275.40 140.89,275.71 141.59,275.91 142.30,276.00 " style="stroke-width: 1.05; stroke: #626C7C; fill: #F3F1EA;"/>
+      <text x="188.00" y="231.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.31px" lengthAdjust="spacingAndGlyphs">Disposal</text>
+      <text x="188.00" y="241.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="22.02px" lengthAdjust="spacingAndGlyphs">None</text>
+      <text x="188.00" y="251.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="163.78,253.00 212.22,253.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <polygon points="250.48,276.00 341.52,276.00 341.34,276.00 342.06,275.97 342.76,275.82 343.44,275.57 344.06,275.21 344.62,274.75 345.10,274.21 345.49,273.60 345.77,272.94 345.94,272.24 346.00,271.52 346.00,271.52 346.00,204.48 346.00,204.48 345.94,203.76 345.77,203.06 345.49,202.40 345.10,201.79 344.62,201.25 344.06,200.79 343.44,200.43 342.76,200.18 342.06,200.03 341.52,200.00 250.48,200.00 251.02,200.03 250.30,200.00 249.59,200.09 248.89,200.29 248.24,200.60 247.65,201.01 247.13,201.51 246.69,202.09 246.36,202.73 246.13,203.41 246.01,204.12 246.00,204.48 246.00,271.52 246.01,271.16 246.01,271.88 246.13,272.59 246.36,273.27 246.69,273.91 247.13,274.49 247.65,274.99 248.24,275.40 248.89,275.71 249.59,275.91 250.30,276.00 " style="stroke-width: 1.05; stroke: #2C6FBB; fill: #E4EDF8;"/>
+      <text x="296.00" y="231.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.31px" lengthAdjust="spacingAndGlyphs">Disposal</text>
+      <text x="296.00" y="241.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="19.16px" lengthAdjust="spacingAndGlyphs">SMA</text>
+      <text x="296.00" y="251.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="271.78,253.00 320.22,253.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <polygon points="358.48,276.00 449.52,276.00 449.34,276.00 450.06,275.97 450.76,275.82 451.44,275.57 452.06,275.21 452.62,274.75 453.10,274.21 453.49,273.60 453.77,272.94 453.94,272.24 454.00,271.52 454.00,271.52 454.00,204.48 454.00,204.48 453.94,203.76 453.77,203.06 453.49,202.40 453.10,201.79 452.62,201.25 452.06,200.79 451.44,200.43 450.76,200.18 450.06,200.03 449.52,200.00 358.48,200.00 359.02,200.03 358.30,200.00 357.59,200.09 356.89,200.29 356.24,200.60 355.65,201.01 355.13,201.51 354.69,202.09 354.36,202.73 354.13,203.41 354.01,204.12 354.00,204.48 354.00,271.52 354.01,271.16 354.01,271.88 354.13,272.59 354.36,273.27 354.69,273.91 355.13,274.49 355.65,274.99 356.24,275.40 356.89,275.71 357.59,275.91 358.30,276.00 " style="stroke-width: 1.05; stroke: #A83E43; fill: #F8DCDA;"/>
+      <text x="404.00" y="231.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #A83E43; font-family: &quot;IBM Plex Sans&quot;;" textLength="36.31px" lengthAdjust="spacingAndGlyphs">Disposal</text>
+      <text x="404.00" y="241.64" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #A83E43; font-family: &quot;IBM Plex Sans&quot;;" textLength="38.78px" lengthAdjust="spacingAndGlyphs">Financial</text>
+      <text x="404.00" y="251.29" text-anchor="middle" style="font-size: 8.00px;fill: #2C6FBB; font-family: &quot;IBM Plex Sans&quot;;" textLength="48.25px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="379.78,253.00 428.22,253.00 " style="stroke-width: 0.60; stroke: #2C6FBB;"/>
+      <text x="234.00" y="16.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="185.28px" lengthAdjust="spacingAndGlyphs">Random assignment to one of six conditions</text>
+      <text x="234.00" y="34.79" text-anchor="middle" style="font-size: 8.00px;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="291.00px" lengthAdjust="spacingAndGlyphs">2 legal contexts × 3 outcome-information conditions; one vignette per participant</text>
+      <text x="64.00" y="83.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="56.56px" lengthAdjust="spacingAndGlyphs">Legal context</text>
+      <text x="296.00" y="57.14" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="89.59px" lengthAdjust="spacingAndGlyphs">Outcome information</text>
+      <text x="188.00" y="77.47" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="50.38px" lengthAdjust="spacingAndGlyphs">No outcome</text>
+      <text x="188.00" y="88.81" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="49.47px" lengthAdjust="spacingAndGlyphs">information</text>
+      <text x="296.00" y="77.47" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="59.39px" lengthAdjust="spacingAndGlyphs">Self-managed</text>
+      <text x="296.00" y="88.81" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="75.89px" lengthAdjust="spacingAndGlyphs">abortion evidence</text>
+      <text x="404.00" y="77.47" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="66.39px" lengthAdjust="spacingAndGlyphs">Financial-crime</text>
+      <text x="404.00" y="88.81" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="37.95px" lengthAdjust="spacingAndGlyphs">evidence</text>
+      <text x="64.00" y="145.47" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="27.16px" lengthAdjust="spacingAndGlyphs">Illegal</text>
+      <text x="64.00" y="156.81" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="35.81px" lengthAdjust="spacingAndGlyphs">abortion</text>
+      <text x="64.00" y="235.47" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="64.80px" lengthAdjust="spacingAndGlyphs">Illegal disposal</text>
+      <text x="64.00" y="246.81" text-anchor="middle" style="font-size: 9.00px; font-weight: bold;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="76.08px" lengthAdjust="spacingAndGlyphs">of human remains</text>
+      <text x="234.00" y="300.79" text-anchor="middle" style="font-size: 8.00px;fill: #626C7C; font-family: &quot;IBM Plex Sans&quot;;" textLength="357.53px" lengthAdjust="spacingAndGlyphs">None = no outcome information; SMA = self-managed abortion; Financial = financial-crime evidence</text>
+    </g>
+  </g>
+  <title id="study01_design-title">Random assignment across two legal contexts and three outcome-information conditions. Full condition names label the rows and columns; each box shows abbreviated levels and links to its vignette.</title>
+  <desc id="study01_design-desc">A two-by-three design grid shows random assignment to one of six conditions. Outside the cells, the rows are labeled illegal abortion and illegal disposal of human remains; the columns are labeled no outcome information, self-managed abortion evidence and financial-crime evidence. Each cell contains the short levels Abortion or Disposal and None, SMA or Financial, plus a View vignette link.</desc>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c1/" target="_blank" tabindex="0" aria-label="no outcome information; illegal abortion">
+    <rect x="138" y="110" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c2/" target="_blank" tabindex="0" aria-label="self-managed abortion evidence; illegal abortion">
+    <rect x="246" y="110" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c3/" target="_blank" tabindex="0" aria-label="financial-crime evidence; illegal abortion">
+    <rect x="354" y="110" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c4/" target="_blank" tabindex="0" aria-label="no outcome information; illegal disposal of human remains">
+    <rect x="138" y="200" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c5/" target="_blank" tabindex="0" aria-label="self-managed abortion evidence; illegal disposal of human remains">
+    <rect x="246" y="200" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/study01-ncm-c6/" target="_blank" tabindex="0" aria-label="financial-crime evidence; illegal disposal of human remains">
+    <rect x="354" y="200" width="100" height="76" fill="transparent" pointer-events="all"/>
+  </a>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="950" viewBox="0 0 1000 950" role="img" aria-labelledby="title desc">
+  <title id="title">Pilot Study 2 assignment and within-participant sequence</title>
+  <desc id="desc">One assigned outcome type was held constant across three scenarios in one of six orders. Within each scenario, the affidavit and pre-outcome judgments preceded the assigned outcome and post-outcome judgments. Participants rated the three search targets only before the first outcome. Attitudes and demographics followed the three scenarios.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L9,5 L0,10" fill="#000000"/></marker>
+    <style>text{font-family:Arial,Helvetica,sans-serif;fill:#171717} .head{font-size:28px;font-weight:700} .body{font-size:25px} .small{font-size:23px} .box{fill:#fff;stroke:#555;stroke-width:2} .assigned{fill:#ffffff;stroke:#555;stroke-width:2} .flow{fill:none;stroke:#000000;stroke-width:3;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1000" height="950" fill="#fff"/>
+  <text x="500" y="40" class="head" text-anchor="middle">Between participants: one assigned outcome type</text>
+  <rect x="45" y="64" width="440" height="100" rx="4" class="assigned"/>
+  <rect x="515" y="64" width="440" height="100" rx="4" class="assigned"/>
+  <text x="265" y="104" class="body" text-anchor="middle">Expected incriminating evidence</text>
+  <text x="265" y="141" class="small" text-anchor="middle">Self-managed abortion (HACE)</text>
+  <text x="735" y="104" class="body" text-anchor="middle">Unexpected incriminating evidence</text>
+  <text x="735" y="141" class="small" text-anchor="middle">Unrelated financial crime (HUCE)</text>
+  <text x="500" y="205" class="body" text-anchor="middle">The assigned outcome type held across all three scenarios</text>
+  <path d="M500 223 L500 255" class="flow"/>
+  <rect x="45" y="268" width="910" height="121" rx="4" class="box"/>
+  <text x="500" y="307" class="head" text-anchor="middle">Within participants: three scenarios in one of six orders</text>
+  <text x="500" y="346" class="body" text-anchor="middle">Self-managed abortion · Non-criminal miscarriage</text>
+  <text x="500" y="378" class="body" text-anchor="middle">Criminal miscarriage</text>
+  <path d="M500 402 L500 434" class="flow"/>
+  <text x="500" y="477" class="head" text-anchor="middle">Within each scenario</text>
+  <rect x="45" y="502" width="200" height="100" rx="4" class="box"/>
+  <rect x="281" y="502" width="200" height="100" rx="4" class="box"/>
+  <rect x="517" y="502" width="200" height="100" rx="4" class="assigned"/>
+  <rect x="753" y="502" width="202" height="100" rx="4" class="box"/>
+  <text x="145" y="545" class="body" text-anchor="middle">Read</text>
+  <text x="145" y="580" class="body" text-anchor="middle">affidavit</text>
+  <text x="381" y="545" class="body" text-anchor="middle">Pre-outcome</text>
+  <text x="381" y="580" class="body" text-anchor="middle">judgments</text>
+  <text x="617" y="545" class="body" text-anchor="middle">Assigned</text>
+  <text x="617" y="580" class="body" text-anchor="middle">outcome</text>
+  <text x="854" y="545" class="body" text-anchor="middle">Post-outcome</text>
+  <text x="854" y="580" class="body" text-anchor="middle">judgments</text>
+  <path d="M250 552 L271 552" class="flow"/>
+  <path d="M486 552 L507 552" class="flow"/>
+  <path d="M722 552 L743 552" class="flow"/>
+  <path d="M381 602 L381 631" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="45" y="631" width="910" height="100" rx="4" class="box"/>
+  <text x="500" y="672" class="head" text-anchor="middle">First scenario only, before its outcome</text>
+  <text x="500" y="710" class="body" text-anchor="middle">Rate all three search targets once</text>
+  <text x="500" y="776" class="small" text-anchor="middle">Repeat the core pre/post judgment sequence for all three scenarios</text>
+  <path d="M500 793 L500 828" class="flow"/>
+  <rect x="45" y="841" width="910" height="80" rx="4" class="box"/>
+  <text x="500" y="891" class="head" text-anchor="middle">After all three scenarios: attitudes and demographics</text>
+</svg>

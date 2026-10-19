@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="990" viewBox="0 0 1000 990" role="img" aria-labelledby="title desc">
+  <title id="title">Pilot Study 1 design and task sequence</title>
+  <desc id="desc">One assigned verdict condition between participants, four repeated crime prompts within participants, a separate fixed twenty-card task, then individual-difference measures and demographics. Researcher narrative coding after collection appears in a separate panel.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L9,5 L0,10" fill="#000000"/></marker>
+    <style>text{font-family:Arial,Helvetica,sans-serif;fill:#171717} .head{font-size:28px;font-weight:700} .body{font-size:25px} .small{font-size:23px} .box{fill:#fff;stroke:#555;stroke-width:2} .assigned{fill:#ffffff;stroke:#555;stroke-width:2} .flow{fill:none;stroke:#000000;stroke-width:3;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1000" height="990" fill="#fff"/>
+  <text x="500" y="40" class="head" text-anchor="middle">Participant sequence</text>
+  <text x="500" y="81" class="body" text-anchor="middle">Between participants: one assigned verdict instruction</text>
+  <rect x="45" y="103" width="440" height="58" rx="4" class="assigned"/>
+  <rect x="515" y="103" width="440" height="58" rx="4" class="assigned"/>
+  <rect x="45" y="178" width="440" height="58" rx="4" class="assigned"/>
+  <rect x="515" y="178" width="440" height="58" rx="4" class="assigned"/>
+  <text x="265" y="141" class="body" text-anchor="middle">Rightful Not Guilty</text>
+  <text x="735" y="141" class="body" text-anchor="middle">Rightful Guilty</text>
+  <text x="265" y="216" class="body" text-anchor="middle">Wrongful Not Guilty</text>
+  <text x="735" y="216" class="body" text-anchor="middle">Wrongful Guilty</text>
+  <path d="M500 250 L500 285" class="flow"/>
+  <rect x="45" y="299" width="910" height="239" rx="4" class="box"/>
+  <text x="500" y="340" class="head" text-anchor="middle">Within participants: all four crime prompts</text>
+  <text x="500" y="379" class="body" text-anchor="middle">Self-managed abortion · Fetal homicide</text>
+  <text x="500" y="416" class="body" text-anchor="middle">Chemical endangerment of a fetus</text>
+  <text x="500" y="453" class="body" text-anchor="middle">Improper disposal of fetal remains</text>
+  <text x="500" y="492" class="small" text-anchor="middle">Random prompt order; each narrative had at least 100 words</text>
+  <text x="500" y="525" class="small" text-anchor="middle">Severity, guilt, and punishment ratings after each narrative</text>
+  <path d="M500 551 L500 588" class="flow"/>
+  <rect x="45" y="601" width="910" height="102" rx="4" class="box"/>
+  <text x="500" y="640" class="head" text-anchor="middle">Separate card-sorting task: the same 20 scenarios</text>
+  <text x="500" y="680" class="small" text-anchor="middle">Random order; criminality, state-law, and normative judgments</text>
+  <path d="M500 716 L500 752" class="flow"/>
+  <rect x="45" y="765" width="910" height="92" rx="4" class="box"/>
+  <text x="500" y="803" class="head" text-anchor="middle">Individual differences and demographics</text>
+  <text x="500" y="838" class="small" text-anchor="middle">Abortion attitudes · Ambivalent sexism · Religiosity</text>
+  <path d="M45 893 L955 893" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="9 7"/>
+  <text x="500" y="933" class="head" text-anchor="middle">After data collection: researcher narrative coding</text>
+  <text x="500" y="970" class="small" text-anchor="middle">Separate from the participant sequence</text>
+</svg>

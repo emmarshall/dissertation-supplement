@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="468.00pt" height="280.00pt" viewBox="0 0 468.00 280.00" role="group">
+  <g class="svglite">
+    <defs>
+      <style type="text/css"><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+    </defs>
+    <rect width="100%" height="100%" style="stroke: none; fill: #FFFFFF;"/>
+    <defs>
+      <clipPath id="cpMC4wMHw0NjguMDB8MC4wMHwyODAuMDA=">
+        <rect x="0.00" y="0.00" width="468.00" height="280.00"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#cpMC4wMHw0NjguMDB8MC4wMHwyODAuMDA=)">
+      <rect x="0.00" y="0.00" width="468.00" height="280.00" style="stroke-width: 0.75; stroke: none; fill: #FBFAF7;"/>
+      <rect x="0.00" y="53.20" width="131.04" height="44.80" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="65.52" y="79.54" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="46.50px" lengthAdjust="spacingAndGlyphs">Scenario</text>
+      <rect x="126.36" y="26.60" width="336.96" height="25.20" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="294.84" y="43.14" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="47.69px" lengthAdjust="spacingAndGlyphs">Outcome</text>
+      <rect x="0.00" y="114.80" width="131.04" height="50.40" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="65.52" y="137.34" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="69.12px" lengthAdjust="spacingAndGlyphs">Stereotypical</text>
+      <text x="65.52" y="150.54" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="34.25px" lengthAdjust="spacingAndGlyphs">record</text>
+      <rect x="0.00" y="207.20" width="131.04" height="50.40" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="65.52" y="229.74" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="92.94px" lengthAdjust="spacingAndGlyphs">Non-stereotypical</text>
+      <text x="65.52" y="242.94" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="34.25px" lengthAdjust="spacingAndGlyphs">record</text>
+      <rect x="135.72" y="53.20" width="102.96" height="44.80" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="187.20" y="72.94" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="63.56px" lengthAdjust="spacingAndGlyphs">No outcome</text>
+      <text x="187.20" y="86.14" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="60.50px" lengthAdjust="spacingAndGlyphs">information</text>
+      <rect x="243.36" y="53.20" width="102.96" height="44.80" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="294.84" y="72.94" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="72.16px" lengthAdjust="spacingAndGlyphs">Self-managed</text>
+      <text x="294.84" y="86.14" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="44.00px" lengthAdjust="spacingAndGlyphs">abortion</text>
+      <rect x="351.00" y="53.20" width="102.96" height="44.80" style="stroke-width: 0.94; stroke: #FBFAF7; fill: #FBFAF7;"/>
+      <text x="402.48" y="72.94" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="67.25px" lengthAdjust="spacingAndGlyphs">Non-criminal</text>
+      <text x="402.48" y="86.14" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #1D2430; font-family: &quot;Arial&quot;;" textLength="61.81px" lengthAdjust="spacingAndGlyphs">miscarriage</text>
+      <polygon points="143.73,177.80 230.67,177.80 230.44,177.80 231.35,177.76 232.25,177.58 233.10,177.25 233.89,176.80 234.60,176.22 235.20,175.54 235.69,174.77 236.05,173.93 236.27,173.04 236.34,172.13 236.34,172.13 236.34,107.87 236.34,107.87 236.27,106.96 236.05,106.07 235.69,105.23 235.20,104.46 234.60,103.78 233.89,103.20 233.10,102.75 232.25,102.42 231.35,102.24 230.67,102.20 143.73,102.20 144.41,102.24 143.50,102.20 142.60,102.31 141.72,102.57 140.89,102.96 140.14,103.48 139.49,104.11 138.94,104.84 138.51,105.65 138.22,106.51 138.08,107.41 138.06,107.87 138.06,172.13 138.08,171.67 138.08,172.59 138.22,173.49 138.51,174.35 138.94,175.16 139.49,175.89 140.14,176.52 140.89,177.04 141.72,177.43 142.60,177.69 143.50,177.80 " style="stroke-width: 0.94; stroke: #626C7C; fill: #F3F1EA;"/>
+      <text x="187.20" y="133.27" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="34.25px" lengthAdjust="spacingAndGlyphs">Stereo</text>
+      <text x="187.20" y="146.47" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="27.50px" lengthAdjust="spacingAndGlyphs">None</text>
+      <text x="187.20" y="154.61" text-anchor="middle" style="font-size: 8.58px;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polygon points="251.37,177.80 338.31,177.80 338.08,177.80 338.99,177.76 339.89,177.58 340.74,177.25 341.53,176.80 342.24,176.22 342.84,175.54 343.33,174.77 343.69,173.93 343.91,173.04 343.98,172.13 343.98,172.13 343.98,107.87 343.98,107.87 343.91,106.96 343.69,106.07 343.33,105.23 342.84,104.46 342.24,103.78 341.53,103.20 340.74,102.75 339.89,102.42 338.99,102.24 338.31,102.20 251.37,102.20 252.05,102.24 251.14,102.20 250.24,102.31 249.36,102.57 248.53,102.96 247.78,103.48 247.13,104.11 246.58,104.84 246.15,105.65 245.86,106.51 245.72,107.41 245.70,107.87 245.70,172.13 245.72,171.67 245.72,172.59 245.86,173.49 246.15,174.35 246.58,175.16 247.13,175.89 247.78,176.52 248.53,177.04 249.36,177.43 250.24,177.69 251.14,177.80 " style="stroke-width: 0.94; stroke: #2765A8; fill: #E4EDF8;"/>
+      <text x="294.84" y="133.27" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="34.25px" lengthAdjust="spacingAndGlyphs">Stereo</text>
+      <text x="294.84" y="146.47" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="24.44px" lengthAdjust="spacingAndGlyphs">SMA</text>
+      <text x="294.84" y="154.61" text-anchor="middle" style="font-size: 8.58px;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polygon points="359.01,177.80 445.95,177.80 445.72,177.80 446.63,177.76 447.53,177.58 448.38,177.25 449.17,176.80 449.88,176.22 450.48,175.54 450.97,174.77 451.33,173.93 451.55,173.04 451.62,172.13 451.62,172.13 451.62,107.87 451.62,107.87 451.55,106.96 451.33,106.07 450.97,105.23 450.48,104.46 449.88,103.78 449.17,103.20 448.38,102.75 447.53,102.42 446.63,102.24 445.95,102.20 359.01,102.20 359.69,102.24 358.78,102.20 357.88,102.31 357.00,102.57 356.17,102.96 355.42,103.48 354.77,104.11 354.22,104.84 353.79,105.65 353.50,106.51 353.36,107.41 353.34,107.87 353.34,172.13 353.36,171.67 353.36,172.59 353.50,173.49 353.79,174.35 354.22,175.16 354.77,175.89 355.42,176.52 356.17,177.04 357.00,177.43 357.88,177.69 358.78,177.80 " style="stroke-width: 0.94; stroke: #A83E43; fill: #F8DCDA;"/>
+      <text x="402.48" y="133.27" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="34.25px" lengthAdjust="spacingAndGlyphs">Stereo</text>
+      <text x="402.48" y="146.47" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="25.03px" lengthAdjust="spacingAndGlyphs">NCM</text>
+      <text x="402.48" y="154.61" text-anchor="middle" style="font-size: 8.58px;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polygon points="143.73,270.20 230.67,270.20 230.44,270.20 231.35,270.16 232.25,269.98 233.10,269.65 233.89,269.20 234.60,268.62 235.20,267.94 235.69,267.17 236.05,266.33 236.27,265.44 236.34,264.53 236.34,264.53 236.34,200.27 236.34,200.27 236.27,199.36 236.05,198.47 235.69,197.63 235.20,196.86 234.60,196.18 233.89,195.60 233.10,195.15 232.25,194.82 231.35,194.64 230.67,194.60 143.73,194.60 144.41,194.64 143.50,194.60 142.60,194.71 141.72,194.97 140.89,195.36 140.14,195.88 139.49,196.51 138.94,197.24 138.51,198.05 138.22,198.91 138.08,199.81 138.06,200.27 138.06,264.53 138.08,264.07 138.08,264.99 138.22,265.89 138.51,266.75 138.94,267.56 139.49,268.29 140.14,268.92 140.89,269.44 141.72,269.83 142.60,270.09 143.50,270.20 " style="stroke-width: 0.94; stroke: #626C7C; fill: #F3F1EA;"/>
+      <text x="187.20" y="225.67" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="55.62px" lengthAdjust="spacingAndGlyphs">NonStereo</text>
+      <text x="187.20" y="238.87" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="27.50px" lengthAdjust="spacingAndGlyphs">None</text>
+      <text x="187.20" y="247.01" text-anchor="middle" style="font-size: 8.58px;fill: #626C7C; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polygon points="251.37,270.20 338.31,270.20 338.08,270.20 338.99,270.16 339.89,269.98 340.74,269.65 341.53,269.20 342.24,268.62 342.84,267.94 343.33,267.17 343.69,266.33 343.91,265.44 343.98,264.53 343.98,264.53 343.98,200.27 343.98,200.27 343.91,199.36 343.69,198.47 343.33,197.63 342.84,196.86 342.24,196.18 341.53,195.60 340.74,195.15 339.89,194.82 338.99,194.64 338.31,194.60 251.37,194.60 252.05,194.64 251.14,194.60 250.24,194.71 249.36,194.97 248.53,195.36 247.78,195.88 247.13,196.51 246.58,197.24 246.15,198.05 245.86,198.91 245.72,199.81 245.70,200.27 245.70,264.53 245.72,264.07 245.72,264.99 245.86,265.89 246.15,266.75 246.58,267.56 247.13,268.29 247.78,268.92 248.53,269.44 249.36,269.83 250.24,270.09 251.14,270.20 " style="stroke-width: 0.94; stroke: #2765A8; fill: #E4EDF8;"/>
+      <text x="294.84" y="225.67" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="55.62px" lengthAdjust="spacingAndGlyphs">NonStereo</text>
+      <text x="294.84" y="238.87" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="24.44px" lengthAdjust="spacingAndGlyphs">SMA</text>
+      <text x="294.84" y="247.01" text-anchor="middle" style="font-size: 8.58px;fill: #2765A8; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polygon points="359.01,270.20 445.95,270.20 445.72,270.20 446.63,270.16 447.53,269.98 448.38,269.65 449.17,269.20 449.88,268.62 450.48,267.94 450.97,267.17 451.33,266.33 451.55,265.44 451.62,264.53 451.62,264.53 451.62,200.27 451.62,200.27 451.55,199.36 451.33,198.47 450.97,197.63 450.48,196.86 449.88,196.18 449.17,195.60 448.38,195.15 447.53,194.82 446.63,194.64 445.95,194.60 359.01,194.60 359.69,194.64 358.78,194.60 357.88,194.71 357.00,194.97 356.17,195.36 355.42,195.88 354.77,196.51 354.22,197.24 353.79,198.05 353.50,198.91 353.36,199.81 353.34,200.27 353.34,264.53 353.36,264.07 353.36,264.99 353.50,265.89 353.79,266.75 354.22,267.56 354.77,268.29 355.42,268.92 356.17,269.44 357.00,269.83 357.88,270.09 358.78,270.20 " style="stroke-width: 0.94; stroke: #A83E43; fill: #F8DCDA;"/>
+      <text x="402.48" y="225.67" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="55.62px" lengthAdjust="spacingAndGlyphs">NonStereo</text>
+      <text x="402.48" y="238.87" text-anchor="middle" style="font-size: 11.00px; font-weight: bold;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="25.03px" lengthAdjust="spacingAndGlyphs">NCM</text>
+      <text x="402.48" y="247.01" text-anchor="middle" style="font-size: 8.58px;fill: #A83E43; font-family: &quot;Arial&quot;;" textLength="50.86px" lengthAdjust="spacingAndGlyphs">View vignette</text>
+      <polyline points="161.77,155.60 212.63,155.60 " style="stroke-width: 0.45; stroke: #626C7C;"/>
+      <polyline points="269.41,155.60 320.27,155.60 " style="stroke-width: 0.45; stroke: #2765A8;"/>
+      <polyline points="377.05,155.60 427.91,155.60 " style="stroke-width: 0.45; stroke: #A83E43;"/>
+      <polyline points="161.77,248.00 212.63,248.00 " style="stroke-width: 0.45; stroke: #626C7C;"/>
+      <polyline points="269.41,248.00 320.27,248.00 " style="stroke-width: 0.45; stroke: #2765A8;"/>
+      <polyline points="377.05,248.00 427.91,248.00 " style="stroke-width: 0.45; stroke: #A83E43;"/>
+    </g>
+  </g>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/Stereo-None/" target="_blank" tabindex="0" aria-label="View vignette: stereotypical pre-arrest record with no later outcome information">
+    <title>View vignette: stereotypical pre-arrest record with no later outcome information</title>
+    <rect x="138.06" y="102.2" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/Stereo-SMA/" target="_blank" tabindex="0" aria-label="View vignette: stereotypical pre-arrest record with later self-managed abortion information">
+    <title>View vignette: stereotypical pre-arrest record with later self-managed abortion information</title>
+    <rect x="245.7" y="102.2" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/Stereo-NCM/" target="_blank" tabindex="0" aria-label="View vignette: stereotypical pre-arrest record with later non-criminal miscarriage information">
+    <title>View vignette: stereotypical pre-arrest record with later non-criminal miscarriage information</title>
+    <rect x="353.34" y="102.2" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/NonStereo-None/" target="_blank" tabindex="0" aria-label="View vignette: non-stereotypical pre-arrest record with no later outcome information">
+    <title>View vignette: non-stereotypical pre-arrest record with no later outcome information</title>
+    <rect x="138.06" y="194.6" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/NonStereo-SMA/" target="_blank" tabindex="0" aria-label="View vignette: non-stereotypical pre-arrest record with later self-managed abortion information">
+    <title>View vignette: non-stereotypical pre-arrest record with later self-managed abortion information</title>
+    <rect x="245.7" y="194.6" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+  <a href="https://emmarshall.github.io/dissertation-vignettes/posts/NonStereo-NCM/" target="_blank" tabindex="0" aria-label="View vignette: non-stereotypical pre-arrest record with later non-criminal miscarriage information">
+    <title>View vignette: non-stereotypical pre-arrest record with later non-criminal miscarriage information</title>
+    <rect x="353.34" y="194.6" width="98.28" height="75.6" fill="transparent" pointer-events="all"/>
+  </a>
+</svg>
