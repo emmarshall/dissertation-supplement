@@ -690,7 +690,7 @@ body {
 </section>
 <section id="dev-p1-item-5" class="level2">
 <h2 class="anchored" data-anchor-id="dev-p1-item-5">5. Specification of the RH5.1 scenario-feature model</h2>
-<p>Following the working plan, I fitted mental state, medical intervention, pregnancy outcome, care-seeking, and abortion-pill use separately: <code>is_crime ~ feature + (1 | participant_id)</code>. RH5.1 named six features without specifying joint or separate entry. In the five-feature joint specification, sought care coincided with medical intervention and delayed care with negligence. Both care-seeking coefficients were absent from the output; it did not establish that all requested effects were estimated or diagnostic criteria were met.</p>
+<p>Following the working plan, I fitted mental state, medical intervention, pregnancy outcome, care-seeking, and abortion-pill use separately: <code>is_crime ~ feature + (1 | participant_id)</code>. The joint output omitted both care-seeking coefficients and did not establish acceptable diagnostics. Sought care coincided with medical intervention, and delayed care with negligence; RH5.1 did not specify joint or separate entry.</p>
 <p>For the single-feature fits, I replaced the 13-level method variable, which had several levels containing one scenario and complete separation, with an abortion-pill indicator for scenarios 1, 2, 4, and 10. I excluded gestational age because 16 of the 20 scenarios did not specify it. The post hoc models predicted judgments from new participants on the same scenarios; they did not separate independent or causal cue effects. I continued to select main-study scenarios for broad disagreement.</p>
 </section>
 <section id="dev-p1-item-6" class="level2">
@@ -708,7 +708,7 @@ body {
 <section id="dev-p1-item-9" class="level2">
 <h2 class="anchored" data-anchor-id="dev-p1-item-9">9. Selection of the number of clusters in the RH1 prototype analysis</h2>
 <p>The archived OSF response required at least two crime categories to satisfy “silhouette width &gt; 0.25 or gap-statistic support for k &gt; 2”. The response did not specify how to choose k; I selected the two-, three-, or four-cluster solution with the largest average silhouette width in each crime category. Silhouette is undefined for one cluster (Tibshirani et al., 2001, p.&nbsp;418). Silhouette and the gap statistic selected two clusters in each category; silhouette widths were .285 for self-managed abortion, .384 for fetal homicide, .256 for chemical endangerment, and .241 for improper disposal.</p>
-<p>Only improper disposal failed the archived rule: its silhouette was below the cutoff and its gap result did not satisfy k &gt; 2. The local registration, working plan, and analysis used k ≥ 2, counting all four categories rather than three; both readings met the minimum of two.</p>
+<p>The archived rule qualified three categories; the local k ≥ 2 rule qualified all four. Only improper disposal differed between them, and both met the minimum of two categories.</p>
 </section>
 <section id="dev-p1-item-11" class="level2">
 <h2 class="anchored" data-anchor-id="dev-p1-item-11">11. Reliability statistics for ordered holistic codes</h2>
@@ -717,7 +717,7 @@ body {
 </section>
 <section id="dev-p1-item-15" class="level2">
 <h2 class="anchored" data-anchor-id="dev-p1-item-15">15. Reinstated submission</h2>
-<p>I preregistered a stopping rule of 80 completions. One submission that Prolific’s bot and LLM authenticity check had initially flagged was found to have been flagged in error and was reinstated, so the analytic sample was 81 rather than the registered 80. The five other Prolific exclusions remained, and the registered attention-check criterion excluded no participant.</p>
+<p>I preregistered a stopping rule of 80 completions. I reinstated one submission after an erroneous Prolific bot/LLM flag was corrected, bringing the analytic sample to 81. The five other Prolific exclusions remained; no participant failed the registered attention check.</p>
 
 
 </section>
